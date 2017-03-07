@@ -1,1 +1,1 @@
-# rwd-newsletter-2017
+# VOA Responsive Newsletter Template 2017
