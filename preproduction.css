@@ -1,0 +1,70 @@
+/* newsletter CSS to be forced inline before production */
+
+td.item-container {
+	background-color: #fcfcfc;
+	border-top: 1px solid #eee;
+	border-bottom: 2px solid #eee;
+	border-radius: 4px;
+	font-size: 0; /* needed to ensure no extra whitespace */
+	overflow: hidden;
+}
+
+div.standard-text {
+	background-color: #fcfcfc;
+	/*border-top: 1px solid #ddd;*/
+	margin: 0 !important;
+	padding: 15px;
+	text-align: left;
+}
+
+h2.standard,
+h2.standard > a {
+	color: #1330bf;
+	font: 19px sans-serif, normal;
+	font-weight: normal;
+	line-height: 1.35;
+	margin: 0 !important; 
+	padding: 0 0 6px 0;
+	text-decoration: none;
+}
+
+p.standard,
+p.standard > a {
+	color: #666;
+	font: 15px sans-serif, normal;
+	line-height: 1.35;
+	margin: 0 !important;
+	padding: 0px;
+	text-decoration: none;
+}
+
+
+
+
+
+div.featured-text {
+	margin: 0 !important;
+	padding: 15px;
+	text-align: left;
+}
+
+h2.featured,
+h2.featured > a {
+	color: #1330bf;
+	font: 24px sans-serif, normal;
+	font-weight: normal;
+	line-height: 1.35;
+	margin: 0 !important; 
+	padding: 0 0 8px 0;
+	text-decoration: none;
+}
+
+p.featured,
+p.featured > a {
+	color: #666;
+	font: 17px sans-serif, normal;
+	line-height: 1.35;
+	margin: 0 !important;
+	padding: 0px;
+	text-decoration: none;
+}

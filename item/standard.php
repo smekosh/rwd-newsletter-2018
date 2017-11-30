@@ -1,0 +1,80 @@
+
+			<!-- // 2-COLUMN SCAFFOLD [CENTERING] -->
+			<tr>
+				<td align="center" height="100%" valign="top" width="100%">
+					<!--[if mso]>
+					<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+					<tr>
+					<td align="center" valign="top" width="640">
+					<![endif]-->
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%" style="max-width:640px; margin-bottom: 30px;">
+						<tr>
+							<td align="center" valign="top" bgcolor="fcfcfc" class="item-container">
+								<!--// DEVELOPER NOTES:
+									1. Setting font-size:0; is necessary to ensure
+									   that there is no extra spacing introduced
+									   between the centering divs that wrap each
+									   of the columns. //-->
+
+								<!--[if mso]>
+								<table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+								<tr>
+								<td align="left" valign="top" width="320">
+								<![endif]-->
+								<div style="display:inline-block; max-width:320px; vertical-align:top; width:100%;">
+									<!--// DEVELOPER NOTES:
+										1. To have each column center upon stacking,
+										   wrap them in individual divs, set the same
+										   max-width and width as the table within it,
+										   and set display to inline-block; using
+										   vertical-align is optional. //-->
+
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:320px;">
+										<tr>
+											<td align="center" valign="top">
+
+												<!-- // REPLACE WITH BLOCK -->
+												<div><a href=""><img border="0" src="https://gdb.voanews.com/0FCE3F4D-12AC-43BA-BAB1-3CFAD97294D4_w320_r1_s.jpg" /></a></div>
+												<!-- <p style="background-color:#2BAADF; color:#FFFFFF; font:16px Helvetica, sans-serif, normal; margin:0 !important; padding:10px;">LEFT</p> -->
+												<!-- REPLACE WITH BLOCK // -->
+
+											</td>
+										</tr>
+									</table>
+								</div>
+								<!--[if mso]>
+								</td>
+								<td align="left" valign="top" width="320">
+								<![endif]-->
+								<div style="display:inline-block; max-width:320px; vertical-align:top; width:100%;">
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:320px;">
+										<tr>
+											<td align="center" valign="top">
+
+												<!-- // REPLACE WITH BLOCK -->
+												<div class="standard-text">
+													<h2 class="standard"><a href="">Revised Travel Ban Triggers Mixed Reaction</a></h2>
+													<p class="standard"><a href="">Early signs of sharp Republican- Democratic split, while human rights groups blast new order as 'more of the same'</a></p>
+												</div>
+												<!-- REPLACE WITH BLOCK // -->	
+
+											</td>
+										</tr>
+									</table>
+								</div>
+								<!--[if mso]>
+								</td>
+								</tr>
+								</table>
+								<![endif]-->
+							</td>
+						</tr>
+					</table>
+					<!--[if mso]>
+					</td>
+					</tr>
+					</table>
+					<![endif]-->
+				</td>
+			</tr>
+			<!-- 2-COLUMN SCAFFOLD [CENTERING] // -->
