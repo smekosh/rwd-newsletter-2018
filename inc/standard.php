@@ -7,7 +7,7 @@
 					<tr>
 					<td align="center" valign="top" width="640">
 					<![endif]-->
-					<table align="center" border="0" cellpadding="0" cellspacing="0" width="80%" style="max-width:640px; margin-bottom: 30px;">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:640px; margin-bottom: 30px;">
 						<tr>
 							<td align="center" valign="top" bgcolor="fcfcfc" class="item-container">
 								<!--// DEVELOPER NOTES:
@@ -34,8 +34,7 @@
 											<td align="center" valign="top">
 
 												<!-- // REPLACE WITH BLOCK -->
-												<div><a href=""><img border="0" src="https://gdb.voanews.com/0FCE3F4D-12AC-43BA-BAB1-3CFAD97294D4_w320_r1_s.jpg" /></a></div>
-												<!-- <p style="background-color:#2BAADF; color:#FFFFFF; font:16px Helvetica, sans-serif, normal; margin:0 !important; padding:10px;">LEFT</p> -->
+												<div class="standard-image rwd-img"><a href=""><img border="0" src="https://gdb.voanews.com/0FCE3F4D-12AC-43BA-BAB1-3CFAD97294D4_w320_r1_s.jpg" /></a></div>
 												<!-- REPLACE WITH BLOCK // -->
 
 											</td>
@@ -53,8 +52,9 @@
 
 												<!-- // REPLACE WITH BLOCK -->
 												<div class="standard-text">
-													<h2 class="standard"><a href="">Revised Travel Ban Triggers Mixed Reaction</a></h2>
-													<p class="standard"><a href="">Early signs of sharp Republican- Democratic split, while human rights groups blast new order as 'more of the same'</a></p>
+													<h2 class="title"><a href="">Revised Travel Ban Triggers Mixed Reaction</a></h2>
+													<p class="byline">December 1, 2017 | Samantha Smith</p>
+													<p class="intro">Early signs of sharp Republican- Democratic split, while human rights groups blast new order as 'more of the same'</p>
 												</div>
 												<!-- REPLACE WITH BLOCK // -->	
 
