@@ -19,7 +19,7 @@
 										<h2 class="title"><a href="">Revised Travel Ban Triggers Mixed Reaction</a></h2>
 										<p class="byline">December 1, 2017 | Samantha Smith</p>
 										<p class="intro">Early signs of sharp Republican- Democratic split, while human rights groups blast new order as 'more of the same'</p>
-										<div><a href="" class="continue">Continue reading</a></div>
+										<div><a href="" class="continue"><?php echo $loc['continue_btn_featured']; ?></a></div>
 									</div>
 									<!-- REPLACE WITH BLOCK // -->
 

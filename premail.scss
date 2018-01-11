@@ -1,8 +1,21 @@
 /* newsletter CSS to be forced inline before production */
 
+$pagebg:    #f2f2f2;
+
 $voablue:   #1330bf;
+
 $offwhite:  #fcfcfc;
 $vltgray:   #eeeeee;
+$ltgray:    #999999;
+
+
+body {
+	background-color: $pagebg;
+	margin: 0;
+}
+
+
+p { font-size: 13px; }
 
 
 h2, h2 > a { font-family: sans-serif; font-weight: bold; }
@@ -16,7 +29,43 @@ h2, h2 > a, p.byline, p.intro { line-height: 1.35; }
 	width: 100% !important;
 }
 
+.bodywidth {
+	max-width: 640px;
+}
 
+
+// header styles
+
+.header {
+	margin-top: 8px;
+	margin-bottom: 8px;
+	max-width: 640px;
+}
+
+p.link2web,
+p.link2web > a {
+	color: $ltgray;
+	line-height: 1.35;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+.logo {
+	height: 30px;
+	line-height: 1;
+	margin: 0;
+	padding: 8px 0;
+}
+
+h1.newsletter-title {
+	line-height: 1.35;
+	margin: 0;
+	padding: 0 16px;
+}
+
+
+// newsletter body
 
 td.item-container {
 	background-color: $offwhite;
@@ -52,7 +101,7 @@ div.standard-text {
 }
 
 .standard-text p.byline {
-	color: #999;
+	color: $ltgray;
 	font-size: 12px;
 	letter-spacing: .015em;
 	margin: 0 !important;
@@ -94,7 +143,7 @@ div.featured-text {
 }
 
 .featured-text p.byline {
-	color: #999;
+	color: $ltgray;
 	font-size: 13px;
 	letter-spacing: .025em;
 	margin: 0 !important;
