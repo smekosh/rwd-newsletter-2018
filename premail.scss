@@ -59,6 +59,10 @@ p.link2web > a {
 }
 
 h1.newsletter-title {
+	color: #222;
+	font-family: sans-serif;
+	font-size: 3em;
+	font-weight: normal;
 	line-height: 1.35;
 	margin: 0;
 	padding: 0 16px;
@@ -160,9 +164,10 @@ div.featured-text {
 }
 
 .featured-text .continue {
-	background: $voablue;
-	border-radius: 2px;
-	color: $offwhite;
+	background: #fff;
+	border: 2px solid $voablue;
+	border-radius: 4px;
+	color: $voablue;
 	display: inline-block;
 	font-family: sans-serif;
 	font-size: 15px;
@@ -170,6 +175,6 @@ div.featured-text {
 	letter-spacing: .015em;
 	line-height: 1;
 	margin-top: 1em;
-	padding: .5em;
+	padding: .75em .75em .5em .75em;
 	text-decoration: none;
 }
