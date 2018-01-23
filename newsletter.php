@@ -1,30 +1,27 @@
 <?php
 
-$_GET['lang'] = trim(stripcslashes(strip_tags( $_GET['lang'] )));
-$lang = ( $_GET['lang'] == '' ? 'en' : $_GET['lang'] );
-require_once( 'languages/'.$lang.'.php' );
+foreach ( $_GET as $k => $v ) {
+	$_GET[$k] = trim(stripcslashes(strip_tags( $v )));
+}
 
-?><!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8" />
-	<title>RWD Newsletter</title>
-	<style type="text/css">
-		<?php include_once( 'inc/premail.css' ); ?>
-	</style>
-</head>
+// redirect to a default if needed
+if ( empty( $_GET )) {
+	
+	$defaults = array(
+		'debug'         => false,
+		'lang'          => 'en',
+		'bodywidth'     => '640',
+		'showbylines'   => true,
+		'showpubdates'  => true,
+		'pagebg'        => 'f2f2f2'
+	);
+	
+	header( 'Location: newsletter.php?'.http_build_query( $defaults, '', '&' ));
+	exit;
+}
 
-<body>
-	<center>
-		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+// load language configurations and translations
+require_once( 'languages/'.$_GET['lang'].'.php' );
 
-			<?php include( 'inc/header.php' ); ?>
-			<?php include( 'inc/featured.php' ); ?>
-			<?php include( 'inc/standard.php' ); ?>
-			<?php include( 'inc/standard.php' ); ?>
-			<?php include( 'inc/standard.php' ); ?>
-
-		</table>
-	</center>
-</body>
-</html>
+// load main template
+require_once( 'templates/zero.php' );

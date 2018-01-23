@@ -1,0 +1,77 @@
+
+Zero Template 				A base template for whole mailing body (variables: $$$ITEMS$$$, $$$$HEADER$$$, $$$FOOTER$$$).
+Header Template
+Footer Template
+Item Template 				A template for article content type (see the list of variables below).
+First Item Template 		A template for first item (article content type).
+News Item Template 			A template for news content type (same variables as for article content type).
+Zone Template 				A template for title of zone (variables: $$Zone.Name$$)
+FactCheck Item Template 	A template for FactCheck content type (see the list of FactCheck variables below).
+
+
+List of all variables recognized by templates
+Common variables
+
+    $$Article.Title$$ - title of article/news
+    $$Article.TitleCAPS$$ - capitalized title of article/news
+    $$Article.Intro$$ - introduction of article/news
+    $$Article.Content$$ - content of the article
+    $$Article.Url$$ - URL of an article
+    $$Article.PublicationDate$$ - publication date of article/news
+    $$Article.ContenType$$ - name of type of content
+    $$Article.Author$$ - author of the article (or list of authors)
+    $$Article.Dateline$$ - dateline of article (brief piece of text which describes where and when story occurred)
+
+Image variables
+
+    $$Article.Image$$ - complete IMG tag with URL pointing to GDB (width: 100px)
+    $$Article.ImageRTL$$ - complete IMG tag with URL pointing to GDB (width: 100px)
+    $$Article.LargeImage$$ - complete IMG tag with URL pointing to GDB (width: 268px)
+    $$Article.LargeImageRTL$$ - complete IMG tag with URL pointing to GDB (width: 268px)
+    $$Article.ImageUrl$$ - URL of image pointing to GDB (width: 100px)
+    $$Article.LargeImageUrl$$ - URL of image pointing to GDB (width: 268px)
+    $$Article.Image[max-width]$$ - complete IMG tag with URL pointing to GDB (specify maximum width in the brackets)
+    $$Article.ImageRTL[max-width]$$ - complete IMG tag with URL pointing to GDB (specify maximum width in the brackets)
+    $$Article.ImageUrl[max-width]$$ - URL of image pointing to GDB (specify maximum width in the brackets)
+
+Direct variables
+
+    $$Article.DirectUrl$$ - URL of en article in BBG Direct (providing the article is Direct-enabled); otherwise same as $$Article.Url$$
+
+FactCheck Item Variables - valid only for FackCheck template type
+
+    $$FactCheck.Statement.Author$$ - author of the statement
+    $$FactCheck.Statement.Author.Description$$ - description of statements's author
+    $$FactCheck.Statement.Author.Image$$ - image URL of statement's author
+    $$FactCheck.Statement.Content$$ - statement text
+    $$FactCheck.Statement.Source$$ - source of the statement
+    $$FactCheck.Statement.Source.Url$$ - URL of statement source
+    $$FactCheck.Verdict.Title$$ - verdict title
+    $$FactCheck.Verdict.Title.Description$$ - short description of verdict title
+    $$FactCheck.Verdict.Introduction$$ - verdict introduction
+    $$FactCheck.Verdict.Icon$$ - image URL of verdict icon
+    $$FactCheck.Verdict.Color$$ - HEX color code of the verdict
+
+System Variables - can be used in all template types, replace is made at the end of generation process
+
+    $$BASEURL$$ - url of the public site for which mailing is created
+    $$TODAY$$ - today's date
+    $$Topic.Id$$ - newsletter topic id of record in our database (IT IS NOT GoolaraTopicId)
+    $$Topic.LocalizedTitle$$ - newsletter topic title
+    $$Topic.LocalizedDesc$$ - newsletter topic description
+
+Zone Variables - valid only in zone template type
+
+    $$Zone.Name$$ - name of zone
+
+Social Sites URL Variables - valid only for item and news item template types
+
+    $$Social.Facebook$$ - Facebook follow URL.
+    $$Social.GooglePlus$$ - G+ follow URL.
+    $$Social.Twitter$$ - Twitter follow URL.
+
+Goolara Variables - replaced by Goolara before email delivery
+
+    [-EmailAddress-] - recipient email address
+    [-ViewInBrowser-] - URL of HTML version of email
+    
