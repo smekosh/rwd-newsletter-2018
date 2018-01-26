@@ -15,7 +15,11 @@
 			<?php 
 			include( 'header.php' );
 			include( 'item-first.php' );
-			include( 'item.php' );
+			
+			for ( $i = 1; $i < $_GET['itemcount']; $i++ ) {
+				include( 'item.php' );
+			}
+			
 			include( 'footer.php' );
 			?>
 
