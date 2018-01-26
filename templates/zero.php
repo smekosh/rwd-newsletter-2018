@@ -14,11 +14,21 @@
 
 			<?php 
 			include( 'header.php' );
-			include( 'item-first.php' );
 			
-			for ( $i = 1; $i < $_GET['itemcount']; $i++ ) {
-				include( 'item.php' );
+			if ( $_GET['compactlayout'] ) {
+				
+				for ( $i = 0; $i < $_GET['itemcount']; $i++ ) {
+					include( 'item-compact.php' );
+				}
+			} else {
+				
+				include( 'item-first.php' );
+				
+				for ( $i = 1; $i < $_GET['itemcount']; $i++ ) {
+					include( 'item.php' );
+				}
 			}
+			
 			
 			include( 'footer.php' );
 			?>

@@ -15,10 +15,15 @@
 									<div class="featured-image rwd-img"><a href="<?php echo $data['article']['url']; ?>"><img border="0" src="<?php echo $data['article']['image_first_item']; ?>" /></a></div>
 									
 									<div class="featured-text">
+										<p class="content-type"><?php echo $data['article']['content_type']; ?></p>
 										<h2 class="title"><a href="<?php echo $data['article']['url']; ?>"><?php echo $data['article']['title']; ?></a></h2>
 										<?php show_bylines_pubdates(); ?>
 										<p class="intro"><?php echo $data['article']['intro']; ?></p>
-										<div><a href="<?php echo $data['article']['url']; ?>" class="continue"><?php echo $loc['continue_btn_featured']; ?></a></div>
+										<?php if ( $_GET['showbbgdirect'] ) { ?>
+											<div><a href="<?php echo $data['article']['bbg_direct_url']; ?>" class="bbg-direct"><img src="img/fa-download_14x14.png" width="14" height="14" border="0" alt="" /><?php echo $loc['bbg_direct_button']; ?></a></div>
+										<?php } else { ?>
+											<div><a href="<?php echo $data['article']['url']; ?>" class="continue"><?php echo $loc['continue_btn_featured']; ?></a></div>
+										<?php } ?>
 									</div>
 									<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 

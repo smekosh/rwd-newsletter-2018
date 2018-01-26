@@ -8,15 +8,19 @@ foreach ( $_GET as $k => $v ) {
 if ( empty( $_GET )) {
 	
 	$defaults = array(
-		'debug'         => false,
-		'lang'          => 'en',
-		'export'        => false,
-		'itemcount'     => 5,
-		'bodywidth'     => '640',
-		'showbylines'   => true,
-		'showpubdates'  => true,
-		'pagebg'        => 'f2f2f2',
-		'contentbg'     => 'fcfcfc'
+		'debug'           => false,
+		'lang'            => 'en',
+		'export'          => false,
+		'itemcount'       => 5,
+		'bodywidth'       => '640',
+		'compactlayout'   => false,
+		'showbylines'     => true,
+		'showpubdates'    => true,
+		'showdescription' => true,
+		'showviewweblink' => true,
+		'showbbgdirect'   => true,
+		'pagebg'          => 'f2f2f2',
+		'contentbg'       => 'fcfcfc'
 	);
 	
 	header( 'Location: newsletter.php?'.http_build_query( $defaults, '', '&' ));

@@ -17,11 +17,11 @@
 									   of the columns. //--> */ ?>
 
 								<!--[if mso]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
+								<table align="right" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
 								<tr>
-								<td align="left" valign="top" width="<?php echo $_GET['bodywidth']/2; ?>">
+								<td align="right" valign="top" width="<?php echo $_GET['bodywidth']/4; ?>">
 								<![endif]-->
-								<div style="display:inline-block; max-width: <?php echo $_GET['bodywidth']/2; ?>px; vertical-align:top; width:100%;">
+								<div style="display:inline-block; max-width: <?php echo $_GET['bodywidth']/4; ?>px; vertical-align:top; width:100%;">
 									<?php /* <!--// DEVELOPER NOTES:
 										1. To have each column center upon stacking,
 										   wrap them in individual divs, set the same
@@ -29,12 +29,12 @@
 										   and set display to inline-block; using
 										   vertical-align is optional. //--> */ ?>
 
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']/2; ?>px;">
+									<table align="right" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']/4; ?>px;">
 										<tr>
-											<td align="center" valign="top">
+											<td align="right" valign="top">
 
 												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-												<div class="standard-image rwd-img"><a href=""><img border="0" src="<?php echo $data['article']['image_nth_item']; ?>" /></a></div>
+												<div class="standard-image rwd-img"><a href=""><img border="0" src="<?php echo $data['article']['image_compact_item']; ?>" /></a></div>
 												<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 
 											</td>
@@ -43,10 +43,10 @@
 								</div>
 								<!--[if mso]>
 								</td>
-								<td align="left" valign="top" width="<?php echo $_GET['bodywidth']/2; ?>">
+								<td align="left" valign="top" width="<?php echo (($_GET['bodywidth']/4)*3); ?>">
 								<![endif]-->
-								<div style="display:inline-block; max-width: <?php echo $_GET['bodywidth']/2; ?>px; vertical-align:top; width:100%;">
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']/2; ?>px;">
+								<div style="display:inline-block; max-width: <?php echo (($_GET['bodywidth']/4)*3); ?>px; vertical-align:top; width:100%;">
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo (($_GET['bodywidth']/4)*3); ?>px;">
 										<tr>
 											<td align="center" valign="top">
 
