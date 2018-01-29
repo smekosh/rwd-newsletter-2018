@@ -17,7 +17,7 @@
 								<div class="social-icons"><?php
 									foreach ( $social as $sk => $sv ) {
 										if ( trim( $sv['url'] )) {
-											echo '<a href="'.trim( $sv['url'] ).'"><img src="img/fa-'.$sk.'_44x44.png" height="44" width="44" border="0" alt="'.$sv['text'].'" /></a>';
+											echo '<a href="'.trim( $sv['url'] ).'"><img src="img/fa-'.$sk.'_44x44_2x.png" height="44" width="44" border="0" alt="'.$sv['text'].'" /></a>';
 										}
 									}
 								?></div>
