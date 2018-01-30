@@ -13,7 +13,8 @@ if ( empty( $_GET )) {
 		'export'          => false,
 		'itemcount'       => 5,
 		'bodywidth'       => '640',
-		'compactlayout'   => false,
+		'layout'          => 'standard', /* options: standard, compact, fulltext */
+		'showcontenttype' => true,
 		'showbylines'     => true,
 		'showpubdates'    => true,
 		'showdescription' => true,

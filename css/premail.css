@@ -48,11 +48,21 @@ p.link2web > a {
   margin: 0;
   padding: 8px 0; }
 
-h1.newsletter-title {
+h1.newsletter-title-standard,
+h1.newsletter-title-fulltext {
   color: #444444;
   font-family: sans-serif;
   font-size: 3em;
   font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding: 0 16px; }
+
+h1.newsletter-title-compact {
+  color: #444444;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
   line-height: 1;
   margin: 0;
   padding: 0 16px; }

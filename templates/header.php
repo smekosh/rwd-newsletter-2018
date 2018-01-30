@@ -133,7 +133,7 @@
 							<td align="center" valign="top" bgcolor="<?php echo $_GET['pagebg']; ?>" class="newsletter-title">
 
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-								<h1 class="newsletter-title"><?php echo $data['system']['topic_title']; ?></h1>
+								<h1 class="newsletter-title-<?php echo $_GET['layout']; ?>"><?php echo $data['system']['topic_title']; ?></h1>
 								<h2 class="newsletter-date">&mdash; <a href="[-ViewInBrowser-]"><?php echo $data['system']['send_date']; ?></a> &mdash;</h2>
 								<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 								

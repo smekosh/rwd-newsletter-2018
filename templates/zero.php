@@ -15,20 +15,27 @@
 			<?php 
 			include( 'header.php' );
 			
-			if ( $_GET['compactlayout'] ) {
+			switch ( $_GET['layout'] ) {
 				
-				for ( $i = 0; $i < $_GET['itemcount']; $i++ ) {
-					include( 'item-compact.php' );
-				}
-			} else {
-				
-				include( 'item-first.php' );
-				
-				for ( $i = 1; $i < $_GET['itemcount']; $i++ ) {
-					include( 'item.php' );
-				}
+				case 'standard':
+					include( 'item-first.php' );
+					for ( $i = 1; $i < $_GET['itemcount']; $i++ ) {
+						include( 'item.php' );
+					}
+					break;
+					
+				case 'compact':
+					for ( $i = 0; $i < $_GET['itemcount']; $i++ ) {
+						include( 'item-compact.php' );
+					}
+					break;
+					
+				case 'fulltext':
+					for ( $i = 0; $i < $_GET['itemcount']; $i++ ) {
+						include( 'item-first.php' );
+					}
+					break;
 			}
-			
 			
 			include( 'footer.php' );
 			?>
