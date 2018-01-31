@@ -32,7 +32,7 @@
 					
 				case 'fulltext':
 					for ( $i = 0; $i < $_GET['itemcount']; $i++ ) {
-						include( 'item-first.php' );
+						include( 'item-fulltext.php' );
 					}
 					break;
 			}

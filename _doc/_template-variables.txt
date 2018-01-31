@@ -74,4 +74,5 @@ Goolara Variables - replaced by Goolara before email delivery
 
     [-EmailAddress-] - recipient email address
     [-ViewInBrowser-] - URL of HTML version of email
+    [-TopicUnsubscribeUrl-]
     

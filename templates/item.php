@@ -3,13 +3,13 @@
 			<tr>
 				<td align="center" height="100%" valign="top" width="100%">
 					<!--[if mso]>
-					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
+					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $design['body_width']; ?>">
 					<tr>
-					<td align="center" valign="top" width="<?php echo $_GET['bodywidth']; ?>">
+					<td align="center" valign="top" width="<?php echo $design['body_width']; ?>">
 					<![endif]-->
-					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']; ?>px; margin-bottom: 30px;">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $design['body_width']; ?>px; margin-bottom: 30px;">
 						<tr>
-							<td align="center" valign="top" bgcolor="<?php echo $_GET['contentbg']; ?>" class="item-container">
+							<td align="center" valign="top" bgcolor="<?php echo $design['content_bg']; ?>" class="item-container">
 								<?php /* <!--// DEVELOPER NOTES:
 									1. Setting font-size:0; is necessary to ensure
 									   that there is no extra spacing introduced
@@ -17,11 +17,11 @@
 									   of the columns. //--> */ ?>
 
 								<!--[if mso]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
+								<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $design['body_width']; ?>">
 								<tr>
-								<td align="left" valign="top" width="<?php echo $_GET['bodywidth']/2; ?>">
+								<td align="left" valign="top" width="<?php echo $design['body_width']/2; ?>">
 								<![endif]-->
-								<div style="display:inline-block; max-width: <?php echo $_GET['bodywidth']/2; ?>px; vertical-align:top; width:100%;">
+								<div style="display:inline-block; max-width: <?php echo $design['body_width']/2; ?>px; vertical-align:top; width:100%;">
 									<?php /* <!--// DEVELOPER NOTES:
 										1. To have each column center upon stacking,
 										   wrap them in individual divs, set the same
@@ -29,7 +29,7 @@
 										   and set display to inline-block; using
 										   vertical-align is optional. //--> */ ?>
 
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']/2; ?>px;">
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $design['body_width']/2; ?>px;">
 										<tr>
 											<td align="center" valign="top">
 
@@ -43,10 +43,10 @@
 								</div>
 								<!--[if mso]>
 								</td>
-								<td align="left" valign="top" width="<?php echo $_GET['bodywidth']/2; ?>">
+								<td align="left" valign="top" width="<?php echo $design['body_width']/2; ?>">
 								<![endif]-->
-								<div style="display:inline-block; max-width: <?php echo $_GET['bodywidth']/2; ?>px; vertical-align:top; width:100%;">
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']/2; ?>px;">
+								<div style="display:inline-block; max-width: <?php echo $design['body_width']/2; ?>px; vertical-align:top; width:100%;">
+									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $design['body_width']/2; ?>px;">
 										<tr>
 											<td align="center" valign="top">
 

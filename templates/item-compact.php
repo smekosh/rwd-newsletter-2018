@@ -3,20 +3,24 @@
 			<tr>
 				<td align="center" height="100%" valign="top" width="100%">
 					<!--[if mso]>
-					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
+					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $design['body_width']; ?>">
 					<tr>
-					<td align="center" valign="top" width="<?php echo $_GET['bodywidth']; ?>">
+					<td align="center" valign="top" width="<?php echo $design['body_width']; ?>">
 					<![endif]-->
-					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']; ?>px; margin-bottom: 30px;">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $design['body_width']; ?>px; margin-bottom: 30px;">
 						
 						<tr>
-							<td align="center" valign="top" bgcolor="<?php echo $_GET['contentbg']; ?>" class="item-container">
+							<td align="center" valign="top" bgcolor="<?php echo $design['content_bg']; ?>" class="item-container">
 
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
 								
 								<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 									<tr>
-										<td valign="top" width="30%" style="max-width: 160px;"><div class="standard-image rwd-img"><a href=""><img border="0" src="<?php echo $data['article']['image_compact_item']; ?>" /></a></div></td>
+										<td valign="top" width="30%" style="max-width: 160px;">
+											<div class="standard-text" style="padding-right: 0;">
+												<div class="standard-image rwd-img"><a href=""><img border="0" src="<?php echo $data['article']['image_compact_item']; ?>" /></a></div>
+											</div>
+										</td>
 										<td valign="top" width="70%">
 											<div class="standard-text">
 												<?php if ( $_GET['showcontenttype'] ) { ?><p class="content-type"><?php echo $data['article']['content_type']; ?></p><?php } ?>

@@ -4,24 +4,27 @@ foreach ( $_GET as $k => $v ) {
 	$_GET[$k] = trim(stripcslashes(strip_tags( $v )));
 }
 
+$design = array(
+	'body_width' => 640,
+	'page_bg'    => 'f2f2f2',
+	'content_bg' => 'fcfcfc'
+);
+
 // redirect to a default if needed
 if ( empty( $_GET )) {
 	
 	$defaults = array(
-		'debug'           => false,
 		'lang'            => 'en',
+		'g_topic_id'      => 999,
 		'export'          => false,
 		'itemcount'       => 5,
-		'bodywidth'       => '640',
 		'layout'          => 'standard', /* options: standard, compact, fulltext */
 		'showcontenttype' => true,
 		'showbylines'     => true,
 		'showpubdates'    => true,
 		'showdescription' => true,
 		'showviewweblink' => true,
-		'showbbgdirect'   => true,
-		'pagebg'          => 'f2f2f2',
-		'contentbg'       => 'fcfcfc'
+		'showbbgdirect'   => true
 	);
 	
 	header( 'Location: newsletter.php?'.http_build_query( $defaults, '', '&' ));

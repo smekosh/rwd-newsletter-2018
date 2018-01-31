@@ -1,80 +1,40 @@
 
 			<?php if ( $_GET['showdescription'] || $_GET['showviewweblink'] ) { ?>
 			
-			<?php /* <!-- // 2-COLUMN SCAFFOLD [CENTERING] --> */ ?>
+			<?php /* <!-- // 1-COLUMN SCAFFOLD --> */ ?>
 			<tr>
 				<td align="center" height="100%" valign="top" width="100%">
 					<!--[if mso]>
-					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
+					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $design['body_width']; ?>">
 					<tr>
-					<td align="center" valign="top" width="<?php echo $_GET['bodywidth']; ?>">
+					<td align="center" valign="top" width="<?php echo $design['body_width']; ?>">
 					<![endif]-->
-					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']; ?>px; margin-bottom: 8px; margin-top: 16px;">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $design['body_width']; ?>px; margin-bottom: 0; margin-top: 0;">
+						
 						<tr>
-							<td align="center" valign="top" bgcolor="<?php echo $_GET['pagebg']; ?>" class="header">
-								<?php /* <!--// DEVELOPER NOTES:
-									1. Setting font-size:0; is necessary to ensure
-									   that there is no extra spacing introduced
-									   between the centering divs that wrap each
-									   of the columns. //--> */ ?>
+							<td align="center" valign="top" bgcolor="<?php echo $design['page_bg']; ?>" class="header">
 
-								<!--[if mso]>
-								<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
-								<tr>
-								<td align="left" valign="top" width="<?php echo $_GET['bodywidth']/2; ?>">
-								<![endif]-->
-								<div style="display:inline-block; max-width: <?php echo $_GET['bodywidth']/2; ?>px; vertical-align:top; width:100%;">
-									<?php /* <!--// DEVELOPER NOTES:
-										1. To have each column center upon stacking,
-										   wrap them in individual divs, set the same
-										   max-width and width as the table within it,
-										   and set display to inline-block; using
-										   vertical-align is optional. //--> */ ?>
-
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']/2; ?>px;">
-										<tr>
-											<td align="left" valign="top">
-
-												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-												
-												<?php if ( $_GET['showdescription'] ) { ?>
-												<p class="link2web"><?php echo $data['system']['topic_description']; ?></p>
-												<?php } ?>
-												
-												<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
-
-											</td>
-										</tr>
-									</table>
-								</div>
-								<!--[if mso]>
-								</td>
-								<td align="left" valign="top" width="<?php echo $_GET['bodywidth']/2; ?>">
-								<![endif]-->
-								<div style="display:inline-block; max-width: <?php echo $_GET['bodywidth']/2; ?>px; vertical-align:top; width:100%;">
-									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $_GET['bodywidth']/2; ?>px;">
-										<tr>
-											<td align="right" valign="top">
-
-												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-												
-												<?php if ( $_GET['showviewweblink'] ) { ?>
-												<p class="link2web"><a href="[-ViewInBrowser-]"><?php echo $loc['view_this_in_your_browser']; ?></a></p>
-												<?php } ?>
-												
-												<?php /* <!-- REPLACE WITH BLOCK // -->	 */ ?>
-
-											</td>
-										</tr>
-									</table>
-								</div>
-								<!--[if mso]>
-								</td>
-								</tr>
+								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
+								<table align="center" border="0" cellpadding="8" cellspacing="0" width="100%">
+									<tr>
+										<td width="45%" align="left">
+											<?php if ( $_GET['showdescription'] ) { ?>
+											<p class="link2web"><?php echo $data['system']['topic_description']; ?></p>
+											<?php } ?>
+										</td>
+										<td width="10%">&nbsp;</td>
+										<td width="45%" align="right">
+											<?php if ( $_GET['showviewweblink'] ) { ?>
+											<p class="link2web"><a href="[-ViewInBrowser-]"><?php echo $loc['view_this_in_your_browser']; ?></a></p>
+											<?php } ?>
+										</td>
+									</tr>
 								</table>
-								<![endif]-->
+								<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
+								
 							</td>
 						</tr>
+						
 					</table>
 					<!--[if mso]>
 					</td>
@@ -83,19 +43,19 @@
 					<![endif]-->
 				</td>
 			</tr>
-			<?php /* <!-- 2-COLUMN SCAFFOLD [CENTERING] // --> */ ?>
+			<?php /* <!-- 1-COLUMN SCAFFOLD // --> */ ?>
 			
 			<?php } // end if showdescription or showviewweblink ?>
-				
-				
-				
+			
+			
+			
 			<?php /* <!-- // 1-COLUMN SCAFFOLD --> */ ?>
 			<tr>
 				<td align="center" height="100%" valign="top" width="100%">
 					<!--[if mso]>
-					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
+					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $design['body_width']; ?>">
 					<tr>
-					<td align="center" valign="top" width="<?php echo $_GET['bodywidth']; ?>">
+					<td align="center" valign="top" width="<?php echo $design['body_width']; ?>">
 					<![endif]-->
 					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px;">
 						
@@ -123,14 +83,14 @@
 			<tr>
 				<td align="center" height="100%" valign="top" width="100%">
 					<!--[if mso]>
-					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $_GET['bodywidth']; ?>">
+					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $design['body_width']; ?>">
 					<tr>
-					<td align="center" valign="top" width="<?php echo $_GET['bodywidth']; ?>">
+					<td align="center" valign="top" width="<?php echo $design['body_width']; ?>">
 					<![endif]-->
 					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px;">
 						
 						<tr>
-							<td align="center" valign="top" bgcolor="<?php echo $_GET['pagebg']; ?>" class="newsletter-title">
+							<td align="center" valign="top" bgcolor="<?php echo $design['page_bg']; ?>" class="newsletter-title">
 
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
 								<h1 class="newsletter-title-<?php echo $_GET['layout']; ?>"><?php echo $data['system']['topic_title']; ?></h1>
