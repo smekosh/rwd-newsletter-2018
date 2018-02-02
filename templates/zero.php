@@ -2,6 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<?php /* http-equiv is rejected by the CMS: <meta content="IE=edge" http-equiv="X-UA-Compatible" /> */ ?>
 	<title>RWD Newsletter</title>
 	<style type="text/css">
 		<?php include_once( 'css/premail.css' ); ?>
@@ -10,7 +12,7 @@
 
 <body>
 	<center>
-		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="<?php echo $design['page_bg']; ?>">
 
 			<?php 
 			include( 'header.php' );

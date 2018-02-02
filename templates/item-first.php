@@ -20,7 +20,7 @@
 										<?php show_bylines_pubdates(); ?>
 										<p class="intro"><?php echo $data['article']['intro']; ?></p>
 										<?php if ( $_GET['showbbgdirect'] ) { ?>
-											<div><a href="<?php echo $data['article']['bbg_direct_url']; ?>" class="bbg-direct"><img src="img/fa-download_14x14_2x.png" width="14" height="14" border="0" alt="" /><?php echo $loc['bbg_direct_button']; ?></a></div>
+											<div><a href="<?php echo $data['article']['bbg_direct_url']; ?>" class="bbg-direct"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /><?php echo $loc['bbg_direct_button']; ?></a></div>
 										<?php } else { ?>
 											<div><a href="<?php echo $data['article']['url']; ?>" class="continue"><?php echo $loc['continue_btn_featured']; ?></a></div>
 										<?php } ?>

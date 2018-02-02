@@ -3,7 +3,7 @@
 # english
 
 $config = array(
-	'lang' => 'en',
+	'lang' => 'id',
 	'dir'  => 'ltr',
 	'date_format' => 'F j, Y'
 );
@@ -24,11 +24,11 @@ $loc = array(
 
 
 $social = array(
-	'facebook'   => array( 'text' => 'Facebook',   'url' => 'https://www.facebook.com/voiceofamerica' ),
-	'instagram'  => array( 'text' => 'Instagram',  'url' => 'https://www.instagram.com/voanews/' ),
+	'facebook'   => array( 'text' => 'Facebook',   'url' => 'https://facebook.com/voaindonesia' ),
+	'instagram'  => array( 'text' => 'Instagram',  'url' => 'https://www.instagram.com/voaindonesia/' ),
 	'soundcloud' => array( 'text' => 'Soundcloud', 'url' => '' ),
-	'twitter'    => array( 'text' => 'Twitter',    'url' => 'https://twitter.com/voanews' ),
-	'youtube'    => array( 'text' => 'YouTube',    'url' => 'https://www.youtube.com/user/VOAvideo' )
+	'twitter'    => array( 'text' => 'Twitter',    'url' => 'https://twitter.com/voaindonesia' ),
+	'youtube'    => array( 'text' => 'YouTube',    'url' => 'https://www.youtube.com/user/voaindonesia' )
 );
 
 
@@ -42,6 +42,6 @@ if ( $_GET['export'] ) {
 } else {
 	
 	// load sample content for demo or debugging CSS
-	require_once( 'data/'.$config['lang'].'_test-data.php' );
+	require_once( 'test-data/'.$config['lang'].'_test-data.php' );
 	
 }
