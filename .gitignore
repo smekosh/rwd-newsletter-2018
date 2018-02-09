@@ -4,3 +4,7 @@
 .DS_Store
 
 *.map
+
+output/newsletter.html
+
+output/newsletter.txt
