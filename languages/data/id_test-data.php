@@ -40,11 +40,11 @@ $data = array(
 	),
 	
 	'article' => array(
-		'title'             => 'Revised Travel Ban Triggers Mixed Reaction',
-		'title_caps'        => 'REVISED TRAVEL BAN TRIGGERS MIXED REACTION',
-		'intro'             => 'Iraq, now removed from U.S. travel restrictions, praised the new executive order, while Sudan, still included in the ban, reaffirmed its opposition to the measure.',
+		'title'             => 'Presiden Turki Desak AS Tarik Pasukan dari Manbij',
+		'title_caps'        => 'PRESIDEN TURKI DESAK AS TARIK PASUKAN DARI MANBIJ',
+		'intro'             => 'Presiden Turki Recep Tayyip Erdogan menyerukan kepada Amerika untuk menarik mundur pasukannya dari kota Manbij di Suriah.',
 		'content'           => $fulltext_sample_body,
-		'url'               => 'https://www.voanews.com/a/revised-travel-ban-triggers-mixed-reaction/3752057.html',
+		'url'               => 'https://www.voaindonesia.com/a/presiden-turki-desak-as-tarik-pasukan-dari-manbij-/4241906.html',
 		'publication_date'  => 'March 7, 2017',
 		'content_type'      => 'Article',
 		'author'            => 'VOA News',

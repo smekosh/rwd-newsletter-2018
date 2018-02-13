@@ -5,7 +5,7 @@
 $config = array(
 	'lang' => 'id',
 	'dir'  => 'ltr',
-	'date_format' => 'F j, Y'
+	'date_format' => 'j F Y'
 );
 
 
@@ -42,6 +42,6 @@ if ( $_GET['export'] ) {
 } else {
 	
 	// load sample content for demo or debugging CSS
-	require_once( 'test-data/'.$config['lang'].'_test-data.php' );
+	require_once( 'data/'.$config['lang'].'_test-data.php' );
 	
 }
