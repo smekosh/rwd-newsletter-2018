@@ -11,13 +11,13 @@ $config = array(
 
 
 $loc = array(
-	'bbg_direct_button'         => 'View on BBG Direct',
-	'continue_btn_featured'		=> 'Continue reading',
-	'social_media_cta'          => 'Engage with VOA',
-	'subscribe_text'            => 'Subscribe to this newsletter.',
-	'unsubscribe_text'          => 'Need to unsubscribe?',
-	'view_this_in_your_browser' => 'View this email in your web browser.',
-	'voa_contact_email'         => 'voanews@voanews.com',
+	'bbg_direct_button'         => 'Lihat di BBG Direct',
+	'continue_btn_featured'		=> 'Selengkapnya',
+	'social_media_cta'          => 'Ikuti VOA Indonesia',
+	'subscribe_text'            => 'Berlangganan buletin ini.',
+	'unsubscribe_text'          => 'Ingin berhenti berlangganan?',
+	'view_this_in_your_browser' => 'Lihat email ini di browser.',
+	'voa_contact_email'         => 'voaindonesia@voanews.com',
 	'voa_logo_alt'				=> 'VOA'
 );
 
