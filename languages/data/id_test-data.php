@@ -45,13 +45,13 @@ $data = array(
 		'intro'             => 'Presiden Turki Recep Tayyip Erdogan menyerukan kepada Amerika untuk menarik mundur pasukannya dari kota Manbij di Suriah.',
 		'content'           => $fulltext_sample_body,
 		'url'               => 'https://www.voaindonesia.com/a/presiden-turki-desak-as-tarik-pasukan-dari-manbij-/4241906.html',
-		'publication_date'  => 'March 7, 2017',
+		'publication_date'  => '7 Maret 2017',
 		'content_type'      => 'Article',
 		'author'            => 'VOA News',
 		'dateline'          => 'Washington, DC',
-		'image_first_item'  => 'https://gdb.voanews.com/A07CC7B4-01B9-4AEF-8353-E56FC97D276D_w'.$design['body_width'].'.jpg',
-		'image_nth_item'    => 'https://gdb.voanews.com/0FCE3F4D-12AC-43BA-BAB1-3CFAD97294D4_w'.($design['body_width']/2).'.jpg',
-		'image_compact_item'=> 'https://gdb.voanews.com/0FCE3F4D-12AC-43BA-BAB1-3CFAD97294D4_w'.($design['body_width']/4).'.jpg',
+		'image_first_item'  => 'https://gdb.voanews.com/CD27FB3E-48E6-489B-8ADA-E0BF01E2E838_w'.$design['body_width'].'.jpg',
+		'image_nth_item'    => 'https://gdb.voanews.com/CD27FB3E-48E6-489B-8ADA-E0BF01E2E838_w'.($design['body_width']/2).'.jpg',
+		'image_compact_item'=> 'https://gdb.voanews.com/CD27FB3E-48E6-489B-8ADA-E0BF01E2E838_w'.($design['body_width']/4).'.jpg',
 		'bbg_direct_url'    => 'https://www.bbgdirect.com/en-US#ItemDetail/1/16/3752057'
 	)
 );
