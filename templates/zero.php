@@ -32,6 +32,12 @@
 					}
 					break;
 					
+				case 'direct':
+					for ( $i = 0; $i < $_GET['itemcount']; $i++ ) {
+						include( 'item.php' );
+					}
+					break;
+					
 				case 'fulltext':
 					for ( $i = 0; $i < $_GET['itemcount']; $i++ ) {
 						include( 'item-fulltext.php' );

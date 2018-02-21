@@ -12,11 +12,11 @@
 								<td align="center" valign="top" bgcolor="<?php echo $design['content_bg']; ?>" class="item-container">
 									
 									<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-									<div class="featured-image rwd-img"><a href="<?php echo $data['article']['url']; ?>"><img border="0" src="<?php echo $data['article']['image_first_item']; ?>" /></a></div>
+									<div class="featured-image rwd-img"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><img border="0" src="<?php echo $data['article']['image_first_item']; ?>" /></a></div>
 									
 									<div class="featured-text">
 										<?php if ( $_GET['showcontenttype'] ) { ?><p class="content-type"><?php echo $data['article']['content_type']; ?></p><?php } ?>
-										<h2 class="title"><a href="<?php echo $data['article']['url']; ?>"><?php echo $data['article']['title']; ?></a></h2>
+										<h2 class="title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></h2>
 										<?php show_bylines_pubdates(); ?>
 										
 										<div class="fulltext-body">

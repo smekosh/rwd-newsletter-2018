@@ -34,7 +34,7 @@
 											<td align="center" valign="top">
 
 												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-												<div class="standard-image rwd-img"><a href="<?php echo $data['article']['url']; ?>"><img border="0" src="<?php echo $data['article']['image_nth_item']; ?>" /></a></div>
+												<div class="standard-image rwd-img"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><img border="0" src="<?php echo $data['article']['image_nth_item']; ?>" /></a></div>
 												<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 
 											</td>
@@ -53,7 +53,7 @@
 												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
 												<div class="standard-text">
 													<?php if ( $_GET['showcontenttype'] ) { ?><p class="content-type"><?php echo $data['article']['content_type']; ?></p><?php } ?>
-													<h2 class="title"><a href="<?php echo $data['article']['url']; ?>"><?php echo $data['article']['title']; ?></a></h2>
+													<h2 class="title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></h2>
 													<?php show_bylines_pubdates(); ?>
 													<p class="intro"><?php echo $data['article']['intro']; ?></p>
 													<?php if ( $_GET['showbbgdirect'] ) { ?>
