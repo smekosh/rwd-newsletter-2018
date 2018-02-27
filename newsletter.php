@@ -12,8 +12,10 @@ $design = array(
 						'voa'        => 'img/voa-logo_142x60_2x_white-on-blue.png',
 						'download'   => 'img/fa-download_14x14_2x.png',
 						'facebook'   => 'img/fa-facebook_44x44_2x.png',
+						'googleplus' => 'img/fa-googleplus_44x44_2x.png',
 						'instagram'  => 'img/fa-instagram_44x44_2x.png',
 						'soundcloud' => 'img/fa-soundcloud_44x44_2x.png',
+						'telegram'   => 'img/fa-telegram_44x44_2x.png',
 						'twitter'    => 'img/fa-twitter_44x44_2x.png',
 						'youtube'    => 'img/fa-youtube_44x44_2x.png'
 	)
@@ -24,7 +26,9 @@ $design_export['img'] = array(
 	'download'   => 'https://gdb.voanews.com/3088AAFB-C7EA-480E-9924-BAF691D1E82D.png',
 	'facebook'   => 'https://gdb.voanews.com/0BAA13B7-EE2D-4266-8134-FFB183B2FC89.png',
 	'instagram'  => 'https://gdb.voanews.com/9CBCF3C8-724B-4C16-B977-EB7B9D694432.png',
+	'googleplus' => 'https://gdb.voanews.com/06A975EE-5CBD-46EE-B132-2C75EFBB6DAB.png',
 	'soundcloud' => 'https://gdb.voanews.com/0C4E022E-ACF0-4B6D-AE64-DC901529B195.png',
+	'telegram'   => 'https://gdb.voanews.com/D536E611-C06B-4975-9EC7-CAB6A70286AB.png',
 	'twitter'    => 'https://gdb.voanews.com/DBB4A9F8-7EF3-4A25-9DD8-319824FAD909.png',
 	'youtube'    => 'https://gdb.voanews.com/B0C4A936-D522-46A5-B2B9-74DF07F3D2D8.png'
 );

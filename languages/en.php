@@ -25,8 +25,10 @@ $loc = array(
 
 $social = array(
 	'facebook'   => array( 'text' => 'Facebook',   'url' => 'https://www.facebook.com/voiceofamerica' ),
+	'googleplus' => array( 'text' => 'Google+',    'url' => '' ),
 	'instagram'  => array( 'text' => 'Instagram',  'url' => 'https://www.instagram.com/voanews/' ),
 	'soundcloud' => array( 'text' => 'Soundcloud', 'url' => '' ),
+	'telegram'   => array( 'text' => 'Telegram',   'url' => '' ),
 	'twitter'    => array( 'text' => 'Twitter',    'url' => 'https://twitter.com/voanews' ),
 	'youtube'    => array( 'text' => 'YouTube',    'url' => 'https://www.youtube.com/user/VOAvideo' )
 );
