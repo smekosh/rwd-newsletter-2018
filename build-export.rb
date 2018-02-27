@@ -11,6 +11,14 @@ else
 end
 
 
+puts "Enter string to append to filename (or press ENTER to skip):"
+filename_extra = STDIN.gets
+
+
+# make the base filename using the date and CLI input
+time = Time.new
+filename = "#{time.strftime("%Y-%m-%d")}_newsletter_#{filename_extra.chomp}"
+
 
 # CGI::parse('param1=value1&param2=value2&param3=value3')
 
@@ -28,12 +36,12 @@ premailer = Premailer.new( newsletter_url, options )
 
 # Write the plain-text output
 # This must come before to_inline_css (https://github.com/premailer/premailer/issues/201)
-File.open("output/newsletter.txt", "w") do |fout|
+File.open("output/#{filename}.txt", "w") do |fout|
   fout.puts premailer.to_plain_text
 end
 
 # Write the HTML output
-File.open("output/newsletter.html", "w") do |fout|
+File.open("output/#{filename}.html", "w") do |fout|
   fout.puts premailer.to_inline_css
 end
 
