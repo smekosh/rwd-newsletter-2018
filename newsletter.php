@@ -112,26 +112,5 @@ function show_bylines_pubdates() {
 
 
 
-// if ( $_GET['export'] ) {
-	
-// 	ob_start();
-// 	require_once( 'templates/zero.php' );
-// 	$newsletter = ob_get_contents();
-// 	ob_end_clean();
-	
-// 	require_once( 'inc/Premailer.php' );
-// 	$pre   = Premailer::html( $newsletter );
-// 	$html  = $pre['html'];
-// 	$plain = $pre['plain'];
-	
-// 	echo $plain;
-	
-// 	//Similarly for URLs:
-// 	//$pre = Premailer::url($url);
-	
-// } else {
-	
-	// display main template
-	require_once( 'templates/zero.php' );
-	
-// }
+// display main template
+require_once( 'templates/zero.php' );
