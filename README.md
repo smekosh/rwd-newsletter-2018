@@ -6,11 +6,11 @@ Follow the directions to install [Premailer](https://github.com/premailer/premai
 
 You'll then want to pull up *newsletter.php* running on localhost in your browser. Use the URL query string to adjust settings (most are simple boolean toggles) until satisfied with the preview. Adding an additional language requires a language config file and test data; see **/languages/** directory for examples.
 
-To generate newsletter templates for the CMS, set `export=1` in the *newsletter.php* URL query string in the browser and reload. Then run this command in your terminal:
+To generate newsletter templates for the CMS, set `export=1` in the *newsletter.php* URL query string in the browser and reload. Then run this command in your terminal and follow the prompts:
 
 `./build-export.rb`
 
-Follow the prompts. An inline-CSS HTML template and a text version of the newsletter will be generated in the **/output/** directory.
+An inline-CSS HTML template and a text version of the newsletter will be generated in the **/output/** directory.
 
 
 ## Making CSS Changes
