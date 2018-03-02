@@ -5,6 +5,6 @@
 
 *.map
 
-output/newsletter.html
+output/*
 
-output/newsletter.txt
+output/*
