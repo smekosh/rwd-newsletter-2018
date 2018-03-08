@@ -1,4 +1,11 @@
 /* newsletter CSS to be forced inline before production */
+/* premailer variables:
+-premailer-width           Available on table, th and td elements
+-premailer-height          Available on table, tr, th and td elements
+-premailer-cellpadding     Available on table elements
+-premailer-cellspacing     Available on table elements
+data-premailer="ignore"    Available on link and style elements. Premailer will ignore these elements entirely.
+*/
 body {
   background-color: #f2f2f2;
   margin: 0; }
@@ -17,10 +24,18 @@ p, p > a {
 h2, h2 > a, p.byline, p.intro {
   line-height: 1.35; }
 
+a > img {
+  border: 0; }
+
 .rwd-img img {
   display: block;
   height: auto !important;
   width: 100% !important; }
+
+table.plain {
+  -premailer-cellpadding: 0;
+  -premailer-cellspacing: 0;
+  -premailer-width: 100%; }
 
 .bodywidth {
   max-width: 640px; }
@@ -28,11 +43,14 @@ h2, h2 > a, p.byline, p.intro {
 .header,
 .social,
 .footer {
-  margin-top: 8px;
-  margin-bottom: 8px;
   max-width: 640px;
   font-size: 0;
   overflow: hidden; }
+
+td.header > table {
+  -premailer-cellpadding: 8;
+  -premailer-cellspacing: 0;
+  -premailer-width: 100%; }
 
 p.link2web,
 p.link2web > a {
@@ -45,8 +63,7 @@ p.link2web > a {
 .logo {
   height: 30px;
   line-height: 1;
-  margin: 0;
-  padding: 8px 0; }
+  margin: 0; }
 
 h1.newsletter-title-standard,
 h1.newsletter-title-direct,
@@ -125,6 +142,79 @@ div.standard-text {
   font-size: 15px;
   margin: 0 !important;
   padding: 0px;
+  text-decoration: none; }
+
+table.item-text {
+  border: 0;
+  font-size: 0;
+  margin: 0;
+  width: 100%;
+  -premailer-cellpadding: 15;
+  -premailer-cellspacing: 0;
+  -premailer-width: 100%; }
+
+table.item-text > tr > td {
+  background-color: #fcfcfc;
+  font-size: 0;
+  margin: 0;
+  width: 100%;
+  -premailer-width: 100%; }
+
+table.tb-content-type {
+  -premailer-cellpadding: 8;
+  -premailer-cellspacing: 0; }
+
+td.text-content-type {
+  background-color: #e9e9e9;
+  color: #666666;
+  font-family: sans-serif;
+  font-size: 12px;
+  letter-spacing: .015em;
+  line-height: 1;
+  text-transform: uppercase; }
+
+td.text-content-type-spacer {
+  -premailer-width: 50%; }
+
+table.item-text h2 {
+  color: #1330bf;
+  font-size: 19px;
+  margin: 0 !important;
+  padding: 0; }
+
+table.item-text h2 > a {
+  color: #1330bf;
+  font-size: 19px;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none; }
+
+table.item-text p.intro {
+  color: #444444;
+  font-size: 15px;
+  margin: 0 !important;
+  padding: 0px;
+  text-decoration: none; }
+
+table.bbg-direct-container {
+  -premailer-cellpadding: 8;
+  -premailer-cellspacing: 0; }
+
+table.bbg-direct-container td {
+  background-color: #1330bf; }
+
+td.bbg-direct-img a {
+  text-decoration: none; }
+  td.bbg-direct-img a img {
+    border: 0; }
+
+td.bbg-direct-text > a {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: .015em;
+  line-height: 1;
   text-decoration: none; }
 
 div.featured-text {
@@ -225,43 +315,43 @@ div.featured-text {
   display: block;
   margin-bottom: 4px; }
 
-.social {
+td.social {
   background-color: #e9e9e9;
   border-top: 1px solid #cccccc;
   border-bottom: 1px solid #cccccc; }
 
-.social-cta {
+table.social-cta td {
   color: #666666;
-  display: block;
+  font-family: sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 1;
-  margin: 0 0 8px 0;
+  margin: 0;
   padding: 0;
   text-transform: uppercase; }
 
-.social-icons > a {
-  color: #1330bf;
-  display: inline-block;
-  font-size: 15px;
-  line-height: 1;
-  margin: 0 8px;
-  padding: 0; }
+table.social-icons td {
+  -premailer-height: 44;
+  -premailer-width: 44; }
 
-.social-icons > a > img {
-  display: block;
-  line-height: 1; }
+td.footer > table {
+  -premailer-cellpadding: 8;
+  -premailer-cellspacing: 0;
+  -premailer-width: 100%; }
 
-.footer > p {
+td.footer > table td {
   color: #666666;
+  font-family: sans-serif;
   font-size: 15px;
-  font-weight: normal; }
+  font-weight: normal;
+  line-height: 1;
+  text-align: center; }
 
-.footer > p > a {
+td.footer > table td > a {
   color: #1330bf;
   text-decoration: none; }
 
-.footer > p.unsubscribe > a {
+td.footer > table td.unsubscribe > a {
   color: #999999; }
 
 /*# sourceMappingURL=premail.css.map */

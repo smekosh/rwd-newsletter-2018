@@ -12,7 +12,13 @@ $gray:      #999999;
 $midgray:   #666666;
 $dkgray:    #444444;
 
-
+/* premailer variables:
+-premailer-width           Available on table, th and td elements
+-premailer-height          Available on table, tr, th and td elements
+-premailer-cellpadding     Available on table elements
+-premailer-cellspacing     Available on table elements
+data-premailer="ignore"    Available on link and style elements. Premailer will ignore these elements entirely.
+*/
 
 body {
 	background-color: $pagebg;
@@ -26,11 +32,20 @@ p, p > a { font-family: sans-serif; font-weight: normal; }
 
 h2, h2 > a, p.byline, p.intro { line-height: 1.35; }
 
+a > img { border: 0; }
+
 .rwd-img img { 
 	display: block;
 	height: auto !important;
 	width: 100% !important;
 }
+
+table.plain {
+	-premailer-cellpadding: 0;
+	-premailer-cellspacing: 0;
+	-premailer-width: 100%;
+}
+
 
 .bodywidth {
 	max-width: 640px;
@@ -42,11 +57,17 @@ h2, h2 > a, p.byline, p.intro { line-height: 1.35; }
 .header,
 .social,
 .footer {
-	margin-top: 8px;
-	margin-bottom: 8px;
+	//zzzzmargin-top: 8px;
+	//zzzzmargin-bottom: 8px;
 	max-width: 640px;
 	font-size: 0;
 	overflow: hidden;
+}
+
+td.header > table {
+	-premailer-cellpadding: 8;
+	-premailer-cellspacing: 0;
+	-premailer-width: 100%;
 }
 
 p.link2web,
@@ -62,7 +83,7 @@ p.link2web > a {
 	height: 30px;
 	line-height: 1;
 	margin: 0;
-	padding: 8px 0;
+	//zzzzpadding: 8px 0;
 }
 
 h1.newsletter-title-standard,
@@ -155,6 +176,103 @@ div.standard-text {
 	font-size: 15px;
 	margin: 0 !important;
 	padding: 0px;
+	text-decoration: none;
+}
+
+
+
+
+
+table.item-text {
+	border: 0;
+	font-size: 0;
+	margin: 0;
+	width: 100%;
+	-premailer-cellpadding: 15;
+	-premailer-cellspacing: 0;
+	-premailer-width: 100%;
+}
+
+table.item-text > tr > td {
+	background-color: $offwhite;
+	font-size: 0;
+	margin: 0;
+	width: 100%;
+	-premailer-width: 100%;
+}
+
+table.tb-content-type {
+	-premailer-cellpadding: 8;
+	-premailer-cellspacing: 0;
+}
+
+td.text-content-type {
+	background-color: #e9e9e9;
+	color: #666666;
+	font-family: sans-serif;
+	font-size: 12px;
+	letter-spacing: .015em;
+	line-height: 1;
+	text-transform: uppercase;
+}
+
+td.text-content-type-spacer {
+	-premailer-width: 50%;
+}
+
+table.item-text h2 {
+	color: #1330bf;
+	font-size: 19px;
+	margin: 0 !important; 
+	padding: 0;
+}
+
+table.item-text h2 > a {
+	color: #1330bf;
+	font-size: 19px;
+	margin: 0 !important; 
+	padding: 0 !important;
+	text-decoration: none;
+}
+
+table.item-text p.intro {
+	color: $dkgray;
+	font-size: 15px;
+	margin: 0 !important;
+	padding: 0px;
+	text-decoration: none;
+}
+
+table.bbg-direct-container {
+	-premailer-cellpadding: 8;
+	-premailer-cellspacing: 0;
+}
+
+table.bbg-direct-container td {
+	background-color: $voablue;
+}
+
+td.bbg-direct-img a {
+	text-decoration: none;
+	
+	img {
+		border: 0;
+	}
+}
+
+td.bbg-direct-text {
+	// xxxxbackground-color: $voablue;
+}
+
+td.bbg-direct-text > a {
+	color: #fff;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: .015em;
+	line-height: 1;
+	// zzzzmargin-top: 16px;
+	// zzzzpadding: 9px 9px 7px 9px;
 	text-decoration: none;
 }
 
@@ -276,50 +394,78 @@ div.featured-text {
 
 
 
-.social {
+td.social {
 	background-color: $vltgray;
 	border-top: 1px solid $ltgray;
 	border-bottom: 1px solid $ltgray;
 }
 
-.social-cta {
+table.social-cta td {
 	color: $midgray;
-	display: block;
+	font-family: sans-serif;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 1;
-	margin: 0 0 8px 0;
+	margin: 0;
 	padding: 0;
 	text-transform: uppercase;
 }
 
-.social-icons > a {
-	color: $voablue;
-	display: inline-block;
-	font-size: 15px;
-	line-height: 1;
-	margin: 0 8px;
-	padding: 0;
+table.social-icons td {
+	-premailer-height: 44;
+	-premailer-width: 44;
 }
 
-.social-icons > a > img {
-	display: block;
-	line-height: 1;
+// .social-icons > a {
+// 	color: $voablue;
+// 	display: inline-block;
+// 	font-size: 15px;
+// 	line-height: 1;
+// 	margin: 0 8px;
+// 	padding: 0;
+// }
+
+// .social-icons > a > img {
+// 	display: block;
+// 	line-height: 1;
+// }
+
+
+td.footer > table {
+	-premailer-cellpadding: 8;
+	-premailer-cellspacing: 0;
+	-premailer-width: 100%;
 }
 
-
-
-.footer > p {
+td.footer > table td {
 	color: $midgray;
+	font-family: sans-serif;
 	font-size: 15px;
 	font-weight: normal;
+	line-height: 1;
+	text-align: center;
 }
 
-.footer > p > a {
+td.footer > table td > a {
 	color: $voablue;
 	text-decoration: none;
 }
 
-.footer > p.unsubscribe > a {
+td.footer > table td.unsubscribe > a {
 	color: $gray;
 }
+
+// .footer > p {
+// 	color: $midgray;
+// 	font-size: 15px;
+// 	font-weight: normal;
+// }
+
+// .footer > p > a {
+// 	color: $voablue;
+// 	text-decoration: none;
+// }
+
+// .footer > p.unsubscribe > a {
+// 	color: $gray;
+// }

@@ -7,7 +7,7 @@
 					<tr>
 					<td align="center" valign="top" width="<?php echo $design['body_width']; ?>">
 					<![endif]-->
-					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $design['body_width']; ?>px; margin-bottom: 30px;">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $design['body_width']; ?>px;">
 						<tr>
 							<td align="center" valign="top" bgcolor="<?php echo $design['content_bg']; ?>" class="item-container">
 								<?php /* <!--// DEVELOPER NOTES:
@@ -31,7 +31,7 @@
 
 									<table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: <?php echo $design['body_width']/2; ?>px;">
 										<tr>
-											<td align="center" valign="top">
+											<td align="center" valign="top" class="r-img">
 
 												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
 												<div class="standard-image rwd-img"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><img border="0" src="<?php echo $data['article']['image_nth_item']; ?>" /></a></div>
@@ -51,81 +51,33 @@
 											<td align="center" valign="top">
 
 												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-												<?php /*
-												<div class="standard-text">
-													<?php if ( $_GET['showcontenttype'] ) { ?><p class="content-type"><?php echo $data['article']['content_type']; ?></p><?php } ?>
-													<h2 class="title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></h2>
-													<?php show_bylines_pubdates(); ?>
-													<p class="intro"><?php echo $data['article']['intro']; ?></p>
-													<?php if ( $_GET['showbbgdirect'] ) { ?>
-													<div><a href="<?php echo $data['article']['bbg_direct_url']; ?>" class="bbg-direct"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /><?php echo $loc['bbg_direct_button']; ?></a></div>
-													<?php } ?>
-												</div>
-												*/ ?>
-												
-												<style type="text/css">
-													
-													table.item-text {
-														border: 0;
-														margin: 0;
-														width: 100%;
-														-premailer-cellpadding: 15;
-														-premailer-cellspacing: 0;
-														-premailer-width: 100%;
-													}
-													
-													table.item-text > tr > td {
-														background-color: $offwhite;
-														margin: 0;
-														width: 100%;
-														-premailer-width: 100%;
-													}
-													
-													table.tb-content-type {
-														-premailer-cellpadding: 8;
-														-premailer-cellspacing: 0;
-													}
-													
-													td.text-content-type {
-														background-color: #e9e9e9;
-														color: #666666;
-														font-family: sans-serif;
-														font-size: 12px;
-														letter-spacing: .015em;
-														line-height: 1;
-														text-transform: uppercase;
-													}
-													
-													td.text-content-type-spacer {
-														-premailer-width: 50%;
-													}
-													
-													.item-text h2 {
-														color: #1330bf;
-														font-size: 19px;
-														margin: 0 !important; 
-														padding: 0 0 6px 0;
-													}
-
-													.item-text h2 > a {
-														color: #1330bf;
-														font-size: 19px;
-														margin: 0 !important; 
-														padding: 0 !important;
-														text-decoration: none;
-													}
-													
-												</style>
 												
 												<table class="item-text" border="0">
 													<tr>
 														<td>
-															<?php if ( $_GET['showcontenttype'] ) { ?><table class="tb-content-type" border="0"><tr><td class="text-content-type"><?php echo $data['article']['content_type']; ?></td></tr></table><table border="0" cellpadding="0" cellspacing="0"><tr><td height="12">&nbsp;</td></tr></table><?php } ?>
+															<?php if ( $_GET['showcontenttype'] ) { ?>
+																<table border="0" class="tb-content-type"><tr><td class="text-content-type"><?php echo $data['article']['content_type']; ?></td></tr></table>
+																<?php table_spacer(8); ?>
+															<?php } ?>
 															<h2 class="title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></h2>
+															<?php table_spacer(6); ?>
 															<?php show_bylines_pubdates(); ?>
 															<p class="intro"><?php echo $data['article']['intro']; ?></p>
 															<?php if ( $_GET['showbbgdirect'] ) { ?>
-															<div><a href="<?php echo $data['article']['bbg_direct_url']; ?>" class="bbg-direct"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /><?php echo $loc['bbg_direct_button']; ?></a></div>
+															<?php table_spacer(16); ?>
+															<table border="0" class="bbg-direct-container">
+																<tr>
+																	<td>
+																		<table border="0" class="plain">
+																			<tr>
+																				<td class="bbg-direct-img"><a href="<?php echo $data['article']['bbg_direct_url']; ?>"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /></a></td>
+																				<td width="8" style="font-size: 0;">&nbsp;</td>
+																				<td class="bbg-direct-text"><a href="<?php echo $data['article']['bbg_direct_url']; ?>"><?php echo $loc['bbg_direct_button']; ?></a></td>
+																			</tr>
+																		</table>
+																	</td>
+															</table>
+															<!-- <div><a href="<?php echo $data['article']['bbg_direct_url']; ?>" class="bbg-direct"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /><?php echo $loc['bbg_direct_button']; ?></a></div> -->
 															<?php } ?>
 														</td>
 													</tr>
@@ -145,6 +97,7 @@
 							</td>
 						</tr>
 					</table>
+					<?php table_spacer(30); ?>
 					<!--[if mso]>
 					</td>
 					</tr>

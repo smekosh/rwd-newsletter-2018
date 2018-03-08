@@ -63,7 +63,11 @@
 							<td align="center" valign="top" bgcolor="1330bf" class="header">
 
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-								<div class="logo"><a href="<?php echo $data['system']['base_url']; ?>"><img src="<?php echo $design['img']['voa']; ?>" width="71" height="30" border="0" alt="<?php echo $loc['voa_logo_alt']; ?>" /></a></div>
+								<table align="center" border="0">
+									<tr>
+										<td height="30" align="center"><a href="<?php echo $data['system']['base_url']; ?>"><img src="<?php echo $design['img']['voa']; ?>" width="71" height="30" border="0" alt="<?php echo $loc['voa_logo_alt']; ?>" /></a></td>
+									</tr>
+								</table>
 								<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 								
 							</td>
