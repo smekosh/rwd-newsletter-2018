@@ -4,20 +4,22 @@ foreach ( $_GET as $k => $v ) {
 	$_GET[$k] = trim(stripcslashes(strip_tags( $v )));
 }
 
+$img_dir = 'http://localhost/rwd-newsletter-2018/img/';
+
 $design = array(
 	'body_width' => 640,
 	'page_bg'    => 'f2f2f2',
 	'content_bg' => 'fcfcfc',
 	'img'        => array(
-						'voa'        => 'img/voa-logo_142x60_2x_white-on-blue.png',
-						'download'   => 'img/fa-download_14x14_2x.png',
-						'facebook'   => 'img/fa-facebook_44x44_2x.png',
-						'googleplus' => 'img/fa-googleplus_44x44_2x.png',
-						'instagram'  => 'img/fa-instagram_44x44_2x.png',
-						'soundcloud' => 'img/fa-soundcloud_44x44_2x.png',
-						'telegram'   => 'img/fa-telegram_44x44_2x.png',
-						'twitter'    => 'img/fa-twitter_44x44_2x.png',
-						'youtube'    => 'img/fa-youtube_44x44_2x.png'
+						'voa'        => $img_dir.'voa-logo_142x60_2x_white-on-blue.png',
+						'download'   => $img_dir.'fa-download_14x14_2x.png',
+						'facebook'   => $img_dir.'fa-facebook_44x44_2x.png',
+						'googleplus' => $img_dir.'fa-googleplus_44x44_2x.png',
+						'instagram'  => $img_dir.'fa-instagram_44x44_2x.png',
+						'soundcloud' => $img_dir.'fa-soundcloud_44x44_2x.png',
+						'telegram'   => $img_dir.'fa-telegram_44x44_2x.png',
+						'twitter'    => $img_dir.'fa-twitter_44x44_2x.png',
+						'youtube'    => $img_dir.'fa-youtube_44x44_2x.png'
 	)
 );
 
@@ -108,6 +110,12 @@ function show_bylines_pubdates() {
 		
 		echo '</p>';
 	}
+}
+
+
+
+function table_spacer( $height = 0 ) {
+	echo '<table border="0" class="plain"><tr><td style="font-size: 0;" height="'.$height.'">&nbsp;</td></tr></table>';
 }
 
 
