@@ -94,7 +94,7 @@ function show_bylines_pubdates() {
 	$showpubdates = $_GET['showpubdates'];
 	
 	if ( $showpubdates || $showbylines ) {
-		echo '<p class="byline">';
+		echo '<table border="0" class="plain byline"><tr><td>';
 		
 		if ( $showpubdates ) {
 			echo $data['article']['publication_date'];
@@ -108,7 +108,9 @@ function show_bylines_pubdates() {
 			echo $data['article']['author'];
 		}
 		
-		echo '</p>';
+		echo '</td></tr></table>';
+		
+		table_spacer(6);
 	}
 }
 

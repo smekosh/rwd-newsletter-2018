@@ -77,7 +77,6 @@
 																		</table>
 																	</td>
 															</table>
-															<!-- <div><a href="<?php echo $data['article']['bbg_direct_url']; ?>" class="bbg-direct"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /><?php echo $loc['bbg_direct_button']; ?></a></div> -->
 															<?php } ?>
 														</td>
 													</tr>
