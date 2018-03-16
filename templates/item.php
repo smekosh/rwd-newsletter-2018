@@ -1,4 +1,6 @@
 
+<?php export_divider('item', 'start'); ?>
+
 			<?php /* <!-- // 2-COLUMN SCAFFOLD [CENTERING] --> */ ?>
 			<tr>
 				<td align="center" height="100%" valign="top" width="100%">
@@ -59,10 +61,10 @@
 																<table border="0" class="tb-content-type"><tr><td class="text-content-type"><?php echo $data['article']['content_type']; ?></td></tr></table>
 																<?php table_spacer(8); ?>
 															<?php } ?>
-															<h2 class="title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></h2>
-															<?php table_spacer(6); ?>
+															<table border="0" class="plain"><tr><td class="article-title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></td></tr></table>
+															<?php table_spacer(8); ?>
 															<?php show_bylines_pubdates(); ?>
-															<p class="intro"><?php echo $data['article']['intro']; ?></p>
+															<table border="0" class="plain"><tr><td class="intro"><?php echo $data['article']['intro']; ?></td></tr></table>
 															<?php if ( $_GET['showbbgdirect'] ) { ?>
 															<?php table_spacer(16); ?>
 															<table border="0" class="bbg-direct-container">
@@ -105,3 +107,5 @@
 				</td>
 			</tr>
 			<?php /* <!-- 2-COLUMN SCAFFOLD [CENTERING] // --> */ ?>
+
+<?php export_divider('item', 'end'); ?>

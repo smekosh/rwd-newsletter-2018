@@ -10,6 +10,7 @@ $design = array(
 	'body_width' => 640,
 	'page_bg'    => 'f2f2f2',
 	'content_bg' => 'fcfcfc',
+	'voa_blue'   => '1330bf',
 	'img'        => array(
 						'voa'        => $img_dir.'voa-logo_142x60_2x_white-on-blue.png',
 						'download'   => $img_dir.'fa-download_14x14_2x.png',
@@ -118,6 +119,19 @@ function show_bylines_pubdates() {
 
 function table_spacer( $height = 0 ) {
 	echo '<table border="0" class="plain"><tr><td style="font-size: 0;" height="'.$height.'">&nbsp;</td></tr></table>';
+}
+
+
+
+function export_divider( $template, $position ) {
+	
+	$divider = '*******************************************************************************';
+	
+	if ( $_GET['export'] ) {
+		echo "\r\r\r\r\r";
+		echo strtoupper("<!-- {$divider} {$template} template {$position} {$divider} -->");
+		echo "\r\r\r\r\r";
+	}
 }
 
 

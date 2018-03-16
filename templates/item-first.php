@@ -1,4 +1,6 @@
 
+<?php export_divider('first item', 'start'); ?>
+
 				<?php /* <!-- // 1-COLUMN SCAFFOLD --> */ ?>
 				<tr>
 					<td align="center" height="100%" valign="top" width="100%">
@@ -24,11 +26,7 @@
 												<table border="0" class="plain"><tr><td class="article-title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></td></tr></table>
 												<?php table_spacer(8); ?>
 												<?php show_bylines_pubdates(); ?>
-												<table border="0" class="plain">
-													<tr>
-														<td class="intro"><?php echo $data['article']['intro']; ?></td>
-													</tr>
-												</table>
+												<table border="0" class="plain"><tr><td class="intro"><?php echo $data['article']['intro']; ?></td></tr></table>
 												<?php table_spacer(16); ?>
 												<?php if ( $_GET['showbbgdirect'] ) { ?>
 												<table border="0" class="bbg-direct-container">
@@ -45,38 +43,18 @@
 												</table>
 												<?php } else { ?>
 												
-												<?php /*
 												<!--[if mso]>
-												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://litmus.com" style="height:36px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#EB7035" fillcolor="#EB7035">
+												<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="<?php echo $data['article']['url']; ?>" style="height:35px;v-text-anchor:middle;width:150px;" arcsize="5%" strokecolor="#<?php echo $design['voa_blue']; ?>" fillcolor="#<?php echo $design['content_bg']; ?>">
 													<w:anchorlock/>
-													<center style="color:#ffffff;font-family:Helvetica, Arial,sans-serif;font-size:16px;">I am a button &rarr;</center>
+													<center style="color:#<?php echo $design['voa_blue']; ?>;font-family:Helvetica,Tahoma,Verdana,Arial,sans-serif;font-size:15px;"><?php echo $loc['continue_btn_featured']; ?></center>
 												</v:roundrect>
 												<![endif]-->
-												<a href="http://buttons.cm" style="background-color:#EB7035;border:1px solid #EB7035;border-radius:3px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;line-height:44px;text-align:center;text-decoration:none;width:150px;-webkit-text-size-adjust:none;mso-hide:all;">I am a button &rarr;</a>
-												*/ ?>
+												<div><a href="<?php echo $data['article']['url']; ?>" class="continue-btn"><?php echo $loc['continue_btn_featured']; ?></a></div>
 												
-												<table border="0" class="plain continue"><tr><td><a href="<?php echo $data['article']['url']; ?>"><?php echo $loc['continue_btn_featured']; ?></a></td></tr></table>
-												<?php /* <div><a href="<?php echo $data['article']['url']; ?>" class="continue"><?php echo $loc['continue_btn_featured']; ?></a></div> */ ?>
 												<?php } ?>
 											</td>
 										</tr>
 									</table>
-									
-									
-									
-									<!--
-									<div class="featured-text">
-										<?php if ( $_GET['showcontenttype'] ) { ?><p class="content-type"><?php echo $data['article']['content_type']; ?></p><?php } ?>
-										<h2 class="title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></h2>
-										<?php show_bylines_pubdates(); ?>
-										<p class="intro"><?php echo $data['article']['intro']; ?></p>
-										<?php if ( $_GET['showbbgdirect'] ) { ?>
-											<div><a href="<?php echo $data['article']['bbg_direct_url']; ?>" class="bbg-direct"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /><?php echo $loc['bbg_direct_button']; ?></a></div>
-										<?php } else { ?>
-											<div><a href="<?php echo $data['article']['url']; ?>" class="continue"><?php echo $loc['continue_btn_featured']; ?></a></div>
-										<?php } ?>
-									</div>
-									-->
 									<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 
 								</td>
@@ -91,3 +69,5 @@
 					</td>
 				</tr>
 				<?php /* <!-- 1-COLUMN SCAFFOLD // --> */ ?>
+
+<?php export_divider('first item', 'end'); ?>

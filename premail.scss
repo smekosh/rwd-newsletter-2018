@@ -13,7 +13,7 @@ $midgray:   #666666;
 $dkgray:    #444444;
 
 
-$fontstack: Helvetica, Verdana, Tahoma, sans-serif;
+$fontstack: Helvetica, Tahoma, Verdana, Arial, sans-serif;
 
 /* premailer variables:
 -premailer-width           Available on table, th and td elements
@@ -41,6 +41,8 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+img { display: block; }
 
 .rwd-img img { 
 	display: block;
@@ -85,52 +87,52 @@ p.link2web > a {
 	text-decoration: none;
 }
 
-.logo {
-	height: 30px;
-	line-height: 1;
-	margin: 0;
-	//zzzzpadding: 8px 0;
+// .logo {
+// 	height: 30px;
+// 	line-height: 1;
+// 	margin: 0;
+// 	//zzzzpadding: 8px 0;
+// }
+
+table.logo a {
+	color: #fff;
+	font-family: $fontstack;
+	font-size: 24px;
+	font-weight: bold;
 }
 
-h1.newsletter-title-standard,
-h1.newsletter-title-direct,
-h1.newsletter-title-fulltext {
+td.newsletter-title {
 	color: $dkgray;
 	font-family: $fontstack;
 	font-size: 42px;
 	font-weight: normal;
 	line-height: 1;
 	margin: 0;
-	padding: 0 16px;
+	padding: 0;
+	text-align: center;
 }
 
-h1.newsletter-title-compact {
-	color: $dkgray;
-	font-family: $fontstack;
+table.compact-title td.newsletter-title {
 	font-size: 24px;
 	font-weight: bold;
-	line-height: 1;
-	margin: 0;
-	padding: 0 16px;
 }
 
-h2.newsletter-date {
-	color: $ltgray;
+td.newsletter-date,
+td.newsletter-date > a {
 	font-family: $fontstack;
 	font-size: 14px;
 	font-weight: normal;
 	letter-spacing: .015em;
 	line-height: 1;
 	margin: 0;
-	padding: 8px 16px;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
 	text-transform: uppercase;
 }
 
-h2.newsletter-date > a {
-	color: $gray;
-	font-weight: normal;
-	text-decoration: none;
-}
+td.newsletter-date { color: $ltgray; }
+td.newsletter-date > a { color: $gray; }
 
 
 // newsletter body
@@ -306,16 +308,26 @@ div.featured-text {
 }
 */
 
-.featured-text td.article-title,
-.featured-text td.article-title > a {
+td.article-title,
+td.article-title > a {
 	color: $voablue;
 	font-family: $fontstack;
-	font-size: 24px;
 	font-weight: bold;
-	line-height: 1.35;
 	margin: 0; 
 	padding: 0;
 	text-decoration: none;
+}
+
+.featured-text td.article-title,
+.featured-text td.article-title > a {
+	font-size: 24px;
+	line-height: 1.35;
+}
+
+.item-text td.article-title,
+.item-text td.article-title > a {
+	font-size: 19px;
+	line-height: 1.15;
 }
 
 /*
@@ -344,16 +356,43 @@ div.featured-text {
 }
 */
 
-.featured-text td.intro {
+td.intro {
 	color: $dkgray;
 	font-family: $fontstack;
-	font-size: 17px;
-	line-height: 1.35;
 	margin: 0;
 	padding: 0px;
 	text-decoration: none;
 }
 
+.featured-text td.intro {
+	font-size: 17px;
+	line-height: 1.35;
+}
+
+.item-text td.intro {
+	font-size: 15px;
+	line-height: 1.35;
+}
+
+.continue-btn {
+	background-color: #fff;
+	border: 1px solid $voablue;
+	border-radius: 4px;
+	color: $voablue;
+	display: inline-block;
+	font-family: $fontstack;
+	font-size: 15px;
+	font-weight: normal;
+	letter-spacing: .015em;
+	line-height: 35px;
+	text-align: center;
+	text-decoration: none;
+	width: 150px;
+	-webkit-text-size-adjust: none;
+	mso-hide: all;
+}
+
+/*
 table.continue {
 	-premailer-cellpadding: 0;
 	-premailer-cellspacing: 12px;
@@ -389,6 +428,7 @@ table.continue td > a {
 	//padding: 12px 12px 8px 12px;
 	text-decoration: none;
 }
+*/
 
 /*
 .continue {
@@ -490,20 +530,16 @@ table.social-icons td {
 	-premailer-width: 44;
 }
 
-// .social-icons > a {
-// 	color: $voablue;
-// 	display: inline-block;
-// 	font-size: 15px;
-// 	line-height: 1;
-// 	margin: 0 8px;
-// 	padding: 0;
-// }
-
-// .social-icons > a > img {
-// 	display: block;
-// 	line-height: 1;
-// }
-
+table.social-icons td a {
+	color: $voablue;
+	font-family: $fontstack;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
 
 td.footer > table {
 	-premailer-cellpadding: 8;
@@ -528,18 +564,3 @@ td.footer > table td > a {
 td.footer > table td.unsubscribe > a {
 	color: $gray;
 }
-
-// .footer > p {
-// 	color: $midgray;
-// 	font-size: 15px;
-// 	font-weight: normal;
-// }
-
-// .footer > p > a {
-// 	color: $voablue;
-// 	text-decoration: none;
-// }
-
-// .footer > p.unsubscribe > a {
-// 	color: $gray;
-// }

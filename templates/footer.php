@@ -1,4 +1,6 @@
 
+<?php export_divider('footer', 'start'); ?>
+
 			<?php /* <!-- // 1-COLUMN SCAFFOLD --> */ ?>
 			<tr>
 				<td align="center" height="100%" valign="middle" width="100%">
@@ -86,3 +88,5 @@
 				</td>
 			</tr>
 			<?php /* <!-- 1-COLUMN SCAFFOLD // --> */ ?>
+
+<?php export_divider('footer', 'end'); ?>

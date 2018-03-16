@@ -1,4 +1,6 @@
 
+<?php export_divider('header', 'start'); ?>
+
 			<?php if ( $_GET['showdescription'] || $_GET['showviewweblink'] ) { ?>
 			
 			<?php /* <!-- // 1-COLUMN SCAFFOLD --> */ ?>
@@ -57,13 +59,13 @@
 					<tr>
 					<td align="center" valign="top" width="<?php echo $design['body_width']; ?>">
 					<![endif]-->
-					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px;">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 						
 						<tr>
 							<td align="center" valign="top" bgcolor="1330bf" class="header">
 
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-								<table align="center" border="0">
+								<table align="center" border="0" class="plain logo">
 									<tr>
 										<td height="30" align="center"><a href="<?php echo $data['system']['base_url']; ?>"><img src="<?php echo $design['img']['voa']; ?>" width="71" height="30" border="0" alt="<?php echo $loc['voa_logo_alt']; ?>" /></a></td>
 									</tr>
@@ -74,6 +76,7 @@
 						</tr>
 						
 					</table>
+					<?php table_spacer(30); ?>
 					<!--[if mso]>
 					</td>
 					</tr>
@@ -91,20 +94,40 @@
 					<tr>
 					<td align="center" valign="top" width="<?php echo $design['body_width']; ?>">
 					<![endif]-->
-					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 30px;">
+					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 						
 						<tr>
-							<td align="center" valign="top" bgcolor="<?php echo $design['page_bg']; ?>" class="newsletter-title">
+							<td align="center" valign="top" bgcolor="<?php echo $design['page_bg']; ?>">
 
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-								<h1 class="newsletter-title-<?php echo $_GET['layout']; ?>"><?php echo $data['system']['topic_title']; ?></h1>
-								<h2 class="newsletter-date">&mdash; <a href="[-ViewInBrowser-]"><?php echo $data['system']['send_date']; ?></a> &mdash;</h2>
+								
+								<table border="0" class="plain <?php echo $_GET['layout']; ?>-title">
+									<tr>
+										<td width="16">&nbsp;</td>
+										<td class="newsletter-title"><?php echo $data['system']['topic_title']; ?></td>
+										<td width="16">&nbsp;</td>
+									</tr>
+								</table>
+								
+								<?php table_spacer(8); ?>
+								
+								<table border="0" class="plain">
+									<tr>
+										<td width="16">&nbsp;</td>
+										<td class="newsletter-date">&mdash; <a href="[-ViewInBrowser-]"><?php echo $data['system']['send_date']; ?></a> &mdash;</td>
+										<td width="16">&nbsp;</td>
+									</tr>
+								</table>
+								
+								<?php table_spacer(8); ?>
+								
 								<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 								
 							</td>
 						</tr>
 						
 					</table>
+					<?php table_spacer(30); ?>
 					<!--[if mso]>
 					</td>
 					</tr>
@@ -113,3 +136,5 @@
 				</td>
 			</tr>
 			<?php /* <!-- 1-COLUMN SCAFFOLD // --> */ ?>
+
+<?php export_divider('header', 'end'); ?>
