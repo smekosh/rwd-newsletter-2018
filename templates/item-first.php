@@ -14,7 +14,7 @@
 								<td align="center" valign="top" bgcolor="<?php echo $design['content_bg']; ?>" class="item-container">
 									
 									<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-									<div class="featured-image rwd-img"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><img border="0" src="<?php echo $data['article']['image_first_item']; ?>" /></a></div>
+									<div class="featured-image rwd-img"><a href="<?php echo ( $_GET['layout'] == 'direct' ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><img border="0" src="<?php echo $data['article']['image_first_item']; ?>" /></a></div>
 									
 									<table class="featured-text" border="0">
 										<tr>
@@ -23,12 +23,12 @@
 													<table border="0" class="tb-content-type"><tr><td class="text-content-type"><?php echo $data['article']['content_type']; ?></td></tr></table>
 													<?php table_spacer(8); ?>
 												<?php } ?>
-												<table border="0" class="plain"><tr><td class="article-title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></td></tr></table>
+												<table border="0" class="plain"><tr><td class="article-title"><a href="<?php echo ( $_GET['layout'] == 'direct' ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></td></tr></table>
 												<?php table_spacer(8); ?>
 												<?php show_bylines_pubdates(); ?>
 												<table border="0" class="plain"><tr><td class="intro"><?php echo $data['article']['intro']; ?></td></tr></table>
 												<?php table_spacer(16); ?>
-												<?php if ( $_GET['showbbgdirect'] ) { ?>
+												<?php if ( $_GET['layout'] == 'direct' ) { ?>
 												<table border="0" class="bbg-direct-container">
 													<tr>
 														<td>

@@ -3,7 +3,7 @@
 
 			<?php /* <!-- // 2-COLUMN SCAFFOLD [CENTERING] --> */ ?>
 			<tr>
-				<td align="center" height="100%" valign="top" width="100%">
+				<td align="center" height="100%" valign="top" width="95%">
 					<!--[if mso]>
 					<table align="center" border="0" cellspacing="0" cellpadding="0" width="<?php echo $design['body_width']; ?>">
 					<tr>
@@ -36,7 +36,7 @@
 											<td align="center" valign="top" class="r-img">
 
 												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-												<div class="standard-image rwd-img"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><img border="0" src="<?php echo $data['article']['image_nth_item']; ?>" /></a></div>
+												<div class="standard-image rwd-img"><a href="<?php echo ( $_GET['layout'] == 'direct' ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><img border="0" src="<?php echo $data['article']['image_nth_item']; ?>" /></a></div>
 												<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 
 											</td>
@@ -61,11 +61,11 @@
 																<table border="0" class="tb-content-type"><tr><td class="text-content-type"><?php echo $data['article']['content_type']; ?></td></tr></table>
 																<?php table_spacer(8); ?>
 															<?php } ?>
-															<table border="0" class="plain"><tr><td class="article-title"><a href="<?php echo ( $_GET['showbbgdirect'] ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></td></tr></table>
+															<table border="0" class="plain"><tr><td class="article-title"><a href="<?php echo ( $_GET['layout'] == 'direct' ? $data['article']['bbg_direct_url'] : $data['article']['url'] ); ?>"><?php echo $data['article']['title']; ?></a></td></tr></table>
 															<?php table_spacer(8); ?>
 															<?php show_bylines_pubdates(); ?>
 															<table border="0" class="plain"><tr><td class="intro"><?php echo $data['article']['intro']; ?></td></tr></table>
-															<?php if ( $_GET['showbbgdirect'] ) { ?>
+															<?php if ( $_GET['layout'] == 'direct' ) { ?>
 															<?php table_spacer(16); ?>
 															<table border="0" class="bbg-direct-container">
 																<tr>

@@ -44,13 +44,12 @@ if ( empty( $_GET )) {
 		'g_topic_id'      => 999,
 		'export'          => false,
 		'itemcount'       => 5,
-		'layout'          => 'standard', /* options: standard, compact, fulltext */
+		'layout'          => 'standard', /* options: standard, compact, direct, fulltext */
 		'showcontenttype' => true,
 		'showbylines'     => true,
 		'showpubdates'    => true,
 		'showdescription' => true,
-		'showviewweblink' => true,
-		'showbbgdirect'   => true
+		'showviewweblink' => true
 	);
 	
 	header( 'Location: newsletter.php?'.http_build_query( $defaults, '', '&' ));
@@ -86,6 +85,8 @@ $export_data = array(
 
 // load language configurations and translations
 require_once( 'languages/'.$_GET['lang'].'.php' );
+
+
 
 function show_bylines_pubdates() {
 	
