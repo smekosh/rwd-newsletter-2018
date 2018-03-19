@@ -44,6 +44,6 @@ if ( $_GET['export'] ) {
 } else {
 	
 	// load sample content for demo or debugging CSS
-	require_once( 'data/'.$config['lang'].'_test-data.php' );
+	include_once( 'data/'.$config['lang'].'_test-data.php' );
 	
 }
