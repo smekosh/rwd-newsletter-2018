@@ -20,14 +20,23 @@
 			switch ( $_GET['layout'] ) {
 				
 				case 'standard':
+					if ( $_GET['showzones'] ) {
+						include( 'zone.php' );
+					}
 					include( 'item-first.php' );
 					for ( $i = 1; $i < $_GET['itemcount']; $i++ ) {
+						if ( $_GET['showzones'] ) {
+							include( 'zone.php' );
+						}
 						include( 'item.php' );
 					}
 					break;
 					
 				case 'compact':
 					for ( $i = 0; $i < $_GET['itemcount']; $i++ ) {
+						if ( $_GET['showzones'] ) {
+							include( 'zone.php' );
+						}
 						include( 'item-compact.php' );
 					}
 					break;

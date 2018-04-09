@@ -53,5 +53,9 @@ $data = array(
 		'image_nth_item'    => 'https://gdb.voanews.com/0FCE3F4D-12AC-43BA-BAB1-3CFAD97294D4_w'.($design['body_width']/2).'.jpg',
 		'image_compact_item'=> 'https://gdb.voanews.com/0FCE3F4D-12AC-43BA-BAB1-3CFAD97294D4_w'.($design['body_width']/4).'.jpg',
 		'bbg_direct_url'    => 'https://www.bbgdirect.com/en-US#ItemDetail/1/16/3752057'
+	),
+	
+	'zone' => array(
+		'name'         => 'U.S. Politics'
 	)
 );

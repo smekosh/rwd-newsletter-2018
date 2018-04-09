@@ -117,6 +117,31 @@ td.item-container {
   /* needed to ensure no extra whitespace */
   overflow: hidden; }
 
+td.zone-container {
+  background-color: #f2f2f2;
+  font-size: 0;
+  /* needed to ensure no extra whitespace */
+  overflow: hidden; }
+
+.zone {
+  -premailer-width: 640px; }
+
+.zone-left {
+  background-color: #1330bf;
+  font-size: 0;
+  width: 12px; }
+
+.zone-space {
+  font-size: 0;
+  width: 8px; }
+
+.zone-title {
+  color: #666666;
+  font-family: Helvetica, Tahoma, Verdana, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1; }
+
 div.standard-text {
   background-color: #fcfcfc;
   margin: 0 !important;

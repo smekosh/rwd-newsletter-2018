@@ -147,6 +147,38 @@ td.item-container {
 }
 
 
+// zone headings
+
+td.zone-container {
+	background-color: $pagebg;
+	font-size: 0; /* needed to ensure no extra whitespace */
+	overflow: hidden;
+}
+
+.zone {
+	-premailer-width: 640px;
+}
+
+.zone-left {
+	background-color: $voablue;
+	font-size: 0;
+	width: 12px;
+}
+
+.zone-space {
+	font-size: 0;
+	width: 8px;
+}
+
+.zone-title {
+	color: $midgray;
+	font-family: $fontstack;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1;
+}
+
+
 
 div.standard-text {
 	background-color: $offwhite;

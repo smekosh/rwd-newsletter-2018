@@ -46,6 +46,7 @@ if ( empty( $_GET )) {
 		'itemcount'       => 5,
 		'layout'          => 'standard', /* options: standard, compact, direct, fulltext */
 		'showcontenttype' => true,
+		'showzones'       => false,
 		'showbylines'     => true,
 		'showpubdates'    => true,
 		'showdescription' => true,
@@ -80,6 +81,10 @@ $export_data = array(
 		'image_nth_item'    => '$$Article.ImageUrl['.($design['body_width']/2).']$$',
 		'image_compact_item'=> '$$Article.ImageUrl['.($design['body_width']/4).']$$',
 		'bbg_direct_url'    => '$$Article.DirectUrl$$'
+	),
+	
+	'zone' => array(
+		'name'         => '$$Zone.Name$$'
 	)
 );
 

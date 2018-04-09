@@ -124,6 +124,12 @@
 			</fieldset>
 			
 			<fieldset>
+				<p class="label">Show zone dividers?</p>
+				<label><input type="radio" name="showzones" value="1" /> Yes</label>
+				<label><input type="radio" name="showzones" value="0" checked /> No</label>
+			</fieldset>
+			
+			<fieldset>
 				<p class="label">Show publication dates?</p>
 				<label><input type="radio" name="showpubdates" value="1" checked /> Yes</label>
 				<label><input type="radio" name="showpubdates" value="0" /> No</label>
