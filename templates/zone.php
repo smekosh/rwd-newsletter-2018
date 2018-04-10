@@ -22,7 +22,7 @@
 													<tr>
 														<td class="zone-left">&nbsp;</td>
 														<td class="zone-space">&nbsp;</td>
-														<td class="zone-title"><?php table_spacer(6); ?><?php echo $data['zone']['name']; ?><?php table_spacer(6); ?></td>
+														<td class="zone-title"><?php table_spacer(8); ?><?php echo $data['zone']['name']; ?><?php table_spacer(6); ?></td>
 													</tr>
 												</table>
 												<?php table_spacer(24); ?>
