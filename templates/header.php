@@ -67,7 +67,7 @@
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
 								<table align="center" border="0" class="plain logo">
 									<tr>
-										<td height="30" align="center"><a href="<?php echo $data['system']['base_url']; ?>"><img src="<?php echo $design['img']['voa']; ?>" width="71" height="30" border="0" alt="<?php echo $loc['voa_logo_alt']; ?>" /></a></td>
+										<td height="30" align="center"><a href="<?php echo $data['system']['base_url'].'?'.$tracking; ?>"><img src="<?php echo $design['img']['voa']; ?>" width="71" height="30" border="0" alt="<?php echo $loc['voa_logo_alt']; ?>" /></a></td>
 									</tr>
 								</table>
 								<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
