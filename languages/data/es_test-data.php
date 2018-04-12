@@ -56,5 +56,9 @@ $data = array(
 		'image_nth_item'    => 'https://gdb.voanews.com/634ED89F-7BD8-49D7-8B10-0B46B9263355_w'.($design['body_width']/2).'.jpg',
 		'image_compact_item'=> 'https://gdb.voanews.com/634ED89F-7BD8-49D7-8B10-0B46B9263355_w'.($design['body_width']/4).'.jpg',
 		'bbg_direct_url'    => 'https://www.bbgdirect.com/en-US#ItemDetail/1/16/3752057'
+	),
+	
+	'zone' => array(
+		'name'         => 'Estados Unidos'
 	)
 );

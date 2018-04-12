@@ -14,22 +14,16 @@
 								<td align="center" valign="top" class="zone-container">
 									
 									<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-									<table class="plain zone" border="0">
+									<?php table_spacer(16); ?>
+									<table class="zone" border="0">
+										<tr><td class="zone-border" colspan="3">&nbsp;</td></tr>
 										<tr>
-											<td align="left">
-												<?php table_spacer(16); ?>
-												<table border="0" class="plain">
-													<tr>
-														<td class="zone-left">&nbsp;</td>
-														<td class="zone-space">&nbsp;</td>
-														<td class="zone-title"><?php table_spacer(8); ?><?php echo $data['zone']['name']; ?><?php table_spacer(6); ?></td>
-													</tr>
-												</table>
-												<?php table_spacer(24); ?>
-												
-											</td>
+											<td class="zone-padding">&nbsp;</td>
+											<td class="zone-title"><?php table_spacer(8); ?><?php echo $data['zone']['name']; ?><?php table_spacer(6); ?></td>
+											<td class="zone-padding">&nbsp;</td>
 										</tr>
 									</table>
+									<?php table_spacer(24); ?>
 									<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 
 								</td>
