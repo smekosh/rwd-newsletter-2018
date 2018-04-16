@@ -42,7 +42,6 @@ if ( empty( $_GET )) {
 	$defaults = array(
 		'lang'            => 'en',
 		'g_topic_id'      => 999,
-		'p_topic_id'      => 999,
 		'export'          => false,
 		'itemcount'       => 5,
 		'layout'          => 'standard', /* options: standard, compact, direct, fulltext */
@@ -60,7 +59,7 @@ if ( empty( $_GET )) {
 }
 
 // will be appended to most URLs in the newsletter
-$tracking = "utm_medium=email&utm_campaign={$_GET['newsletterslug']}-pt{$_GET['p_topic_id']}&utm_source=newsletter";
+$tracking = "utm_medium=email&utm_campaign={$_GET['newsletterslug']}-t{$_GET['g_topic_id']}&utm_source=newsletter";
 
 $export_data = array(
 		

@@ -99,11 +99,6 @@
 			</fieldset>
 			
 			<fieldset>
-				<label for="p_topic_id" class="label">Pangea Topic ID</label>
-				<input type="number" name="p_topic_id" id="p_topic_id" maxlength="4" value="" />
-			</fieldset>
-			
-			<fieldset>
 				<label for="newsletterslug" class="label">Newsletter Slug</label>
 				<input type="text" name="newsletterslug" id="newsletterslug" value="" />
 			</fieldset>
