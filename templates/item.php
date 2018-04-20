@@ -36,7 +36,7 @@
 											<td align="center" valign="top" class="r-img">
 
 												<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
-												<div class="standard-image rwd-img"><a href="<?php echo ( $_GET['layout'] == 'direct' ? $data['article']['bbg_direct_url'] : $data['article']['url'] ).'&'.$tracking; ?>"><img border="0" src="<?php echo $data['article']['image_nth_item']; ?>" /></a></div>
+												<div class="standard-image rwd-img"><a href="<?php echo ( $_GET['layout'] == 'direct' ? $data['article']['bbg_direct_url'] : $data['article']['url'].'&'.$tracking ); ?>"><img border="0" src="<?php echo $data['article']['image_nth_item']; ?>" /></a></div>
 												<?php /* <!-- REPLACE WITH BLOCK // --> */ ?>
 
 											</td>
@@ -61,7 +61,7 @@
 																<table border="0" class="tb-content-type"><tr><td class="text-content-type"><?php echo $data['article']['content_type']; ?></td></tr></table>
 																<?php table_spacer(8); ?>
 															<?php } ?>
-															<table border="0" class="plain"><tr><td class="article-title"><a href="<?php echo ( $_GET['layout'] == 'direct' ? $data['article']['bbg_direct_url'] : $data['article']['url'] ).'&'.$tracking; ?>"><?php echo $data['article']['title']; ?></a></td></tr></table>
+															<table border="0" class="plain"><tr><td class="article-title"><a href="<?php echo ( $_GET['layout'] == 'direct' ? $data['article']['bbg_direct_url'] : $data['article']['url'].'&'.$tracking ); ?>"><?php echo $data['article']['title']; ?></a></td></tr></table>
 															<?php table_spacer(8); ?>
 															<?php show_bylines_pubdates(); ?>
 															<table border="0" class="plain"><tr><td class="intro"><?php echo $data['article']['intro']; ?></td></tr></table>
@@ -72,9 +72,9 @@
 																	<td>
 																		<table border="0" class="plain">
 																			<tr>
-																				<td class="bbg-direct-img"><a href="<?php echo $data['article']['bbg_direct_url'].'&'.$tracking; ?>"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /></a></td>
+																				<td class="bbg-direct-img"><a href="<?php echo $data['article']['bbg_direct_url']; ?>"><img src="<?php echo $design['img']['download']; ?>" width="14" height="14" border="0" alt="" /></a></td>
 																				<td width="8" style="font-size: 0;">&nbsp;</td>
-																				<td class="bbg-direct-text"><a href="<?php echo $data['article']['bbg_direct_url'].'&'.$tracking; ?>"><?php echo $loc['bbg_direct_button']; ?></a></td>
+																				<td class="bbg-direct-text"><a href="<?php echo $data['article']['bbg_direct_url']; ?>"><?php echo $loc['bbg_direct_button']; ?></a></td>
 																			</tr>
 																		</table>
 																	</td>
