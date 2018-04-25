@@ -95,6 +95,11 @@ $export_data = array(
 // load language configurations and translations
 require_once( 'languages/'.$_GET['lang'].'.php' );
 
+// allow a newsletter to override default values
+if ( file_exists( 'customizations/'.$_GET['lang'].'-'.$_GET['g_topic_id'].'.php' )) {
+	require_once( 'customizations/'.$_GET['lang'].'-'.$_GET['g_topic_id'].'.php' );
+}
+
 
 
 function show_bylines_pubdates() {
