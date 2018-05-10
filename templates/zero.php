@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="<?php echo $config['lang']; ?>" dir="<?php echo $config['dir']; ?>">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,7 +10,7 @@
 	</style>
 </head>
 
-<body>
+<body lang="<?php echo $config['lang']; ?>" dir="<?php echo $config['dir']; ?>">
 	<center>
 		<table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" bgcolor="<?php echo $design['page_bg']; ?>">
 
