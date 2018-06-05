@@ -28,7 +28,8 @@ options = {
 	:escape_url_attributes => false,
 	:input_encoding => 'UTF-8',
 	:remove_classes => true,
-	:remove_ids => true
+	:remove_ids => true,
+	:replace_html_entities => false
 }
 
 
