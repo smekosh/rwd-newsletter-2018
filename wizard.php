@@ -91,6 +91,7 @@
 					<option value="id">Indonesian</option>
 					<option value="es">Spanish</option>
 					<option value="tr">Turkish</option>
+					<option value="uk">Ukrainian</option>
 				</select>
 			</fieldset>
 			
