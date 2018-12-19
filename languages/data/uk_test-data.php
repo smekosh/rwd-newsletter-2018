@@ -22,8 +22,8 @@ $data = array(
 		'base_url'          => 'https://ukrainian.voanews.com/',
 		'send_date'         => date( $config['date_format'] ),
 		'topic_id'          => '123',
-		'topic_title'       => 'Newsletter Title',
-		'topic_description' => 'A short description of this newsletter',
+		'topic_title'       => 'Голос Америки. Найважливіше за день',
+		'topic_description' => 'Актуальні новини, цікаві інтерв’ю, популярні відео – все, що вам варто дізнатися сьогодні.',
 	),
 	
 	'article' => array(
