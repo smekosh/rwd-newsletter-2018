@@ -20,6 +20,7 @@ $design = array(
 						'soundcloud' => $img_dir.'fa-soundcloud_44x44_2x.png',
 						'telegram'   => $img_dir.'fa-telegram_44x44_2x.png',
 						'twitter'    => $img_dir.'fa-twitter_44x44_2x.png',
+						'vk'         => $img_dir.'fa-vk_44x44_2x.png',
 						'youtube'    => $img_dir.'fa-youtube_44x44_2x.png'
 	)
 );
@@ -33,6 +34,7 @@ $design_export['img'] = array(
 	'soundcloud' => 'https://gdb.voanews.com/0C4E022E-ACF0-4B6D-AE64-DC901529B195.png',
 	'telegram'   => 'https://gdb.voanews.com/D536E611-C06B-4975-9EC7-CAB6A70286AB.png',
 	'twitter'    => 'https://gdb.voanews.com/DBB4A9F8-7EF3-4A25-9DD8-319824FAD909.png',
+	'vk'         => 'https://gdb.voanews.com/274838BE-34E9-4B16-9049-DC598034AA0A.png',
 	'youtube'    => 'https://gdb.voanews.com/B0C4A936-D522-46A5-B2B9-74DF07F3D2D8.png'
 );
 

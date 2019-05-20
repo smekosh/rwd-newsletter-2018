@@ -1,10 +1,9 @@
-
 *.scssc
-
 .DS_Store
-
 *.map
-
 output/*
-
-output/*
+languages/._es.php
+languages/._ru.php
+languages/data/._ru_test-data.php
+._build-export.rb
+img/._fa-vk_44x44_2x.png
