@@ -2,9 +2,15 @@
 	box-sizing: border-box;
 }
 
+html.RadForm_Windows7 {
+	background-color: #f2f2f2;
+	line-height: 1.35;
+	margin: 0;
+}
+
 body {
 	background-color: #f2f2f2;
-	color: #222;
+	color: #222f3a;
 	font-family: Helvetica, Tahoma, Arial, sans-serif;
 	line-height: 1.35;
 	margin: 0;
@@ -12,8 +18,8 @@ body {
 
 h1, h2 { margin: 0; }
 
-a       { color: #1330bf; text-decoration: underline; }
-a:hover { color: #d41010; text-decoration: underline; }
+a       { color: #3a79b7; text-decoration: underline; }
+a:hover { color: #c11d22; text-decoration: underline; }
 
 img { display: block; }
 
@@ -24,7 +30,7 @@ img { display: block; }
 }
 
 #header {
-	border-bottom: 4px solid #1330bf;
+	border-bottom: 4px solid #3a79b7;
 	margin: 0 auto;
 	padding: 1rem;
 	width: 100%;
@@ -95,8 +101,8 @@ h2 {
 .email-form #EmailTB {
 	background-color: #f2f2f2;
 	border: none;
-	border-bottom: 2px solid #1330bf;
-	color: #222;
+	border-bottom: 2px solid #3a79b7;
+	color: #222f3a;
 	box-shadow: none;
 	display: inline-block;
 	font-size: 1rem;
@@ -123,9 +129,9 @@ h2 {
 }
 
 .email-form a.rfdSkinnedButton input {
-	background-color: #1330bf;
+	background-color: #3a79b7;
 	border: none;
-	border-bottom: 2px solid #1330bf;
+	border-bottom: 2px solid #3a79b7;
 	border-radius: none;
 	box-shadow: none;
 	color: #fff;
@@ -141,18 +147,18 @@ h2 {
 
 .email-form a.rfdSkinnedButton:hover input,
 .email-form a.rfdSkinnedButton:active input {
-	background-color: #0e2389;
-	border-color: #0e2389;
+	background-color: #0a5b96;
+	border-color: #0a5b96;
 	cursor: pointer;
 }
 
 .email-form.unsubscribe #EmailTB {
-	border-color: #d41010;
+	border-color: #c11d22;
 }
 
 .email-form.unsubscribe a.rfdSkinnedButton input { 
-	background-color: #d41010;
-	border-color: #d41010;
+	background-color: #c11d22;
+	border-color: #c11d22;
 }
 
 .email-form.unsubscribe a.rfdSkinnedButton:hover input,

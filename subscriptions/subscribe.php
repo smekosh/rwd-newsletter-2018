@@ -17,7 +17,7 @@ require_once( 'subscriptions-data.php' );
 	<div class="wrapper">
 		
 		<header id="header">
-			<a class="logo" href="<?php echo $data['voa_home']; ?>"><img src="../img/voa-logo_142x60_2x_blue-transparent.png" width="71" height="30" alt="VOA" /></a>
+			<a class="logo" href="<?php echo $data['voa_home']; ?>"><img src="../img/voa-2018logo_150x60_2x_blue-transparent.png" width="75" height="30" alt="VOA" /></a>
 		</header>
 		
 		<main id="main">
