@@ -62,7 +62,7 @@
 					<table align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
 						
 						<tr>
-							<td align="center" valign="top" bgcolor="1330bf" class="header">
+							<td align="center" valign="top" bgcolor="<?php echo $design['voa_blue']; ?>" class="header">
 
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
 								<table align="center" border="0" class="plain logo">

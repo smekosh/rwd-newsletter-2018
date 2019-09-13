@@ -4,13 +4,13 @@ foreach ( $_GET as $k => $v ) {
 	$_GET[$k] = trim(stripcslashes(strip_tags( $v )));
 }
 
-$img_dir = 'http://localhost/rwd-newsletter-2018/img/';
+$img_dir = 'http://localhost:8080/rwd-newsletter-2018/img/';
 
 $design = array(
 	'body_width' => 640,
 	'page_bg'    => 'f2f2f2',
 	'content_bg' => 'fcfcfc',
-	'voa_blue'   => '1330bf',
+	'voa_blue'   => '3a79b7',
 	'img'        => array(
 						'voa'        => $img_dir.'voa-logo_142x60_2x_white-on-blue.png',
 						'download'   => $img_dir.'fa-download_14x14_2x.png',

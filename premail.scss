@@ -2,15 +2,17 @@
 
 $pagebg:    #f2f2f2;
 
-$voablue:   #1330bf;
+$voablue:   #3a79b7;
 
+$purewhite: #ffffff;
 $offwhite:  #fcfcfc;
 $ultgray:   #eeeeee;
 $vltgray:   #e9e9e9;
 $ltgray:    #cccccc;
-$gray:      #999999;
-$midgray:   #666666;
-$dkgray:    #444444;
+$gray:      #9eadbb;
+$midgray:   #768492;
+$dkgray:    #4d5a67;
+$vdkgray:   #222f3a;
 
 
 $fontstack: Helvetica, Tahoma, Verdana, Arial, sans-serif;
@@ -86,14 +88,14 @@ p.link2web > a {
 }
 
 table.logo a {
-	color: #fff;
+	color: $purewhite;
 	font-family: $fontstack;
 	font-size: 24px;
 	font-weight: bold;
 }
 
 td.newsletter-title {
-	color: $dkgray;
+	color: $vdkgray;
 	font-family: $fontstack;
 	font-size: 42px;
 	font-weight: normal;
@@ -245,8 +247,8 @@ table.tb-content-type {
 }
 
 td.text-content-type {
-	background-color: #e9e9e9;
-	color: #666666;
+	background-color: $vltgray;
+	color: $midgray;
 	font-family: $fontstack;
 	font-size: 12px;
 	letter-spacing: .015em;
@@ -259,14 +261,14 @@ td.text-content-type-spacer {
 }
 
 table.item-text h2 {
-	color: #1330bf;
+	color: $voablue;
 	font-size: 19px;
 	margin: 0 !important; 
 	padding: 0;
 }
 
 table.item-text h2 > a {
-	color: #1330bf;
+	color: $voablue;
 	font-size: 19px;
 	margin: 0 !important; 
 	padding: 0 !important;
@@ -299,7 +301,7 @@ td.bbg-direct-img a {
 }
 
 td.bbg-direct-text > a {
-	color: #fff;
+	color: $purewhite;
 	font-family: $fontstack;
 	font-size: 13px;
 	font-weight: normal;
@@ -362,7 +364,7 @@ td.intro {
 }
 
 .continue-btn {
-	background-color: #fff;
+	background-color: $purewhite;
 	border: 1px solid $voablue;
 	border-radius: 4px;
 	color: $voablue;
@@ -393,7 +395,7 @@ td.intro {
 
 .bbg-direct {
 	background: $voablue;
-	color: #fff;
+	color: $purewhite;
 	display: inline-block;
 	font-family: $fontstack;
 	font-size: 13px;
