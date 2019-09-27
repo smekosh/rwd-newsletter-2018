@@ -34,8 +34,13 @@ require_once( 'subscriptions-data.php' );
 			
 			<div class="email-form">
 				<div class="gdpr-agreement">
-					<input type="checkbox" name="GDPR" id="GDPR" />
-					<label for="GDPR">I hereby give consent to VOA to use my e-mail address for the purpose of sending me the selected newsletter.</label>
+					<input type="checkbox" name="GDPR-email-agreement" id="GDPR-email-agreement" />
+					<label for="GDPR-email-agreement">I would like to sign up to receive newsletters by email from the Voice of America. I understand I may unsubscribe at any time.</label>
+				</div>
+
+				<div class="gdpr-agreement">
+					<input type="checkbox" name="GDPR-storage-agreement" id="GDPR-storage-agreement" />
+					<label for="GDPR-storage-agreement">I agree that Voice of America may collect, store, and use my email address to provide newsletters by email, in accordance with the <a href="https://www.voanews.com/terms-use-and-privacy-notice">Terms of Use</a>.</label>
 				</div>
 
 				<div>
@@ -47,7 +52,7 @@ require_once( 'subscriptions-data.php' );
 		</main>
 		
 		<footer id="footer">
-			<p class="tos"><a href=""><?php echo $data['terms_of_use']; ?></a></p>
+			<p class="tos"><a href="https://www.voanews.com/terms-use-and-privacy-notice"><?php echo $data['terms_of_use']; ?></a></p>
 		</footer>
 		
 	</div>

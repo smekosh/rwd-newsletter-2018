@@ -79,9 +79,17 @@ h2 {
 }
 
 .error {
-	background-color: #fff7c4;
-	border-color: #f5d50a;
-	color: #4e4400;
+	background: 
+		rgb(255,236,118) 
+		repeating-linear-gradient(
+			135deg, 
+			rgb(255,236,118) 0px, 
+			rgb(255,236,118) 51px,
+			rgb(255,242,157) 51px, 
+			rgb(255,242,157) 102px
+	);
+	border-color: #ebcb00;
+	color: #141100;
 }
 
 .success {
@@ -167,6 +175,10 @@ h2 {
 	border-color: #9d0c0c;
 }
 
+.gdpr-agreement {
+	margin-bottom: 1rem;
+}
+
 .gdpr-agreement input {
 	display: inline-block;
 	vertical-align: top;
@@ -187,7 +199,7 @@ h2 {
 .tos > a { color: #768492; }
 
 .tos > a:hover { 
-	color: #3a79b7;
+	color: #c11d22;
 }
 
 
