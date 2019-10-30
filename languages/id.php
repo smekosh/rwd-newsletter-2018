@@ -11,7 +11,7 @@ $config = array(
 
 
 $loc = array(
-	'bbg_direct_button'         => 'Lihat di BBG Direct',
+	'bbg_direct_button'         => 'Lihat di VOA Direct',
 	'continue_btn_featured'		=> 'Selengkapnya',
 	'social_media_cta'          => 'Ikuti VOA Indonesia',
 	'subscribe_text'            => 'Berlangganan buletin ini.',
