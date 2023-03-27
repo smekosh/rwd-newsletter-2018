@@ -67,7 +67,15 @@
 								<?php /* <!-- // REPLACE WITH BLOCK --> */ ?>
 								<table border="0">
 									<tr>
-										<tr><td class="subscribe"><a href="http://voa.goolara.net/subscribe.aspx?t=<?php echo $_GET['g_topic_id'].'&'.$tracking; ?>"><?php echo $loc['subscribe_text']; ?></a></td></tr>
+										<tr><td class="subscribe"><a href="<?php 
+											if ( $config['sub_site'] == 'goolara' ) {
+												echo 'http://voa.goolara.net/subscribe.aspx?t='.$_GET['g_topic_id'].'&';
+											} else {
+												echo $data['system']['base_url'].'/subscribe.html?';
+											}
+
+											echo $tracking;
+										?>"><?php echo $loc['subscribe_text']; ?></a></td></tr>
 										<tr><td class="unsubscribe"><a href="[-TopicUnsubscribeUrl-]"><?php echo $loc['unsubscribe_text']; ?></a></td></tr>
 										<tr><td class="contact-address"><strong>Voice of America</strong><br />330 Independence Avenue, SW<br />Washington, DC 20237</td></tr>
 										<tr><td class="contact-email"><a href="mailto:<?php echo $loc['voa_contact_email']; ?>"><?php echo $loc['voa_contact_email']; ?></a></td></tr>

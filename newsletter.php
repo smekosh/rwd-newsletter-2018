@@ -4,7 +4,7 @@ foreach ( $_GET as $k => $v ) {
 	$_GET[$k] = trim(stripcslashes(strip_tags( $v )));
 }
 
-$img_dir = 'http://localhost:8080/rwd-newsletter-2018/img/';
+$img_dir = 'http://localhost/voa/rwd-newsletter-2018/img/';
 
 $design = array(
 	'body_width' => 640,
